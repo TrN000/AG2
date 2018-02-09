@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.7.26)  9 FEB 2018 16:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.7.26)  9 FEB 2018 17:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**AG.tex
-(./AG.tex
+**AG2.tex
+(./AG2.tex
 LaTeX2e <2016/03/31>
 Babel <3.9r> and hyphenation patterns for 6 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -463,8 +463,8 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count126
 \LT@p@ftn=\toks33
 )
-(./AG.aux)
-\openout1 = `AG.aux'.
+(./AG2.aux)
+\openout1 = `AG2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
 LaTeX Font Info:    ... okay on input line 28.
@@ -619,162 +619,148 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 61--86
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 []\OT1/cmr/m/n/12 locally free $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 97--119
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 99--121
 [][] 
  []
 
 [1
 
 {/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 128--131
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--134
+Underfull \hbox (badness 10000) in paragraph at lines 134--136
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--138
+Underfull \hbox (badness 10000) in paragraph at lines 140--140
 []\OT1/cmr/m/n/12 quasicoherent $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 135--144
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 137--146
 [][] 
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 154--170
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 156--174
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 188--189
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 196--196
+Underfull \hbox (badness 10000) in paragraph at lines 200--200
 []\OT1/cmr/m/n/12 push-forward of a
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 208--209
+Underfull \hbox (badness 2080) in paragraph at lines 212--213
 []\OT1/cmr/m/n/12 Let $\OMS/cmsy/m/n/12 F$ \OT1/cmr/m/n/12 be a qua-si-co-her-e
 nt, finitely gen-er-ated $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -module .
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 193--213
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 197--217
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 193--213
+Underfull \hbox (badness 10000) in paragraph at lines 197--217
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 223--224
+Underfull \hbox (badness 10000) in paragraph at lines 227--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 286--286
-[]|\OT1/cmr/m/n/12 locally fac-to-rial
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 256--302
+Overfull \hbox (23.99998pt too wide) in alignment at lines 260--306
  [] [] 
  []
 
 [3]
-Underfull \hbox (badness 4713) in paragraph at lines 316--316
-[]|\OT1/cmr/m/n/12 cartier di-vi-sor class
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 331--331
-[]|\OT1/cmr/m/n/12 codimension of a
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 357--357
-[]|\OT1/cmr/m/n/12 Weil di-vi-sor class
- []
-
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ¹ in font cmr12!
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 302--360
+Overfull \hbox (23.99998pt too wide) in alignment at lines 306--364
  [] [] 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 360--373
+Overfull \hbox (23.99998pt too wide) in alignment at lines 364--377
  [] [] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 378--379
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 393--393
+Underfull \hbox (badness 10000) in paragraph at lines 395--395
 \OT1/cmr/m/n/12 a-tive) dif-fer-en-tial
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 391--399
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 436.
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 427--438
  [] [] 
  []
 
-[5] (./AG.aux) ) 
+[5] [6] (./AG2.aux) ) 
 Here is how much of TeX's memory you used:
- 13834 strings out of 494917
- 281811 string characters out of 6179590
- 335125 words of memory out of 5000000
- 16868 multiletter control sequences out of 15000+600000
+ 13892 strings out of 494917
+ 283222 string characters out of 6179590
+ 335123 words of memory out of 5000000
+ 16926 multiletter control sequences out of 15000+600000
  11797 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 61i,22n,84p,468b,974s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on AG.pdf (5 pages, 157421 bytes).
+ 61i,22n,84p,469b,974s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
+ymbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
+mbols/msbm10.pfb>
+Output written on AG2.pdf (6 pages, 160797 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 82 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

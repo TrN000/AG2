@@ -58,7 +58,7 @@ analogously define composition, identity morphism etc. $\leadsto$ this forms a c
 
 Take \oxmod  $\ca{F}_i$ for $i \in I$
 \\
-\begin{longtable}{p{.30\textwidth}  p{.70\textwidth} } 
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} } 
 %\begin{tabular}{p{4cm} p{12cm}}
 
 
@@ -91,9 +91,10 @@ $U\longmapsto Hom_{O_X}(\caf|_U , \cag|_U) =: \ca{H}om_{\ca{O}(X)}(\caf , \cag)(
 \begin{tabbing}
   Abbreviate:     \= $\ox^{(I)} := \bigoplus_{i \in I} \ox $\\
   \>$  \ox^I := \prod_{i \in I} \ox $\\
-  \> $ \ox^r := \bigoplus^{r}_{i=1}\ox$
+  \> $ \ox^r := \bigoplus^{r}_{i=1}\ox$\\
+  
+  \\
 \end{tabbing}
-\\
 
 \begin{tabular}{p{4cm} p{12cm}}
 
@@ -167,11 +168,13 @@ finitely generated \oxmod : & An \oxmod $\caf$ is called: \\
 coherent \oxmod &(b) coherent if it is finitely generated and $\forall U \subset X $ open $\forall n < \infty \, \forall$
 homomorphisms $\varphi : \ox^n|_U \twoheadrightarrow \caf|_U \, ker(\varphi)$ is
 finitely generated. \\
+
+&\\
 \end{tabular}
 
-\\
-%
 
+%
+%
 
   
   
@@ -385,31 +388,93 @@ Let X=Spec B , Y=Spec A and $f:Y\longrightarrow X$ \\
 	&(a)$d(b+b')=d(b)+d(b')$\\
 	&(b)$d(b\cdot b')= b\cdot b' + d(b)\cdot b'$\\
 	&(c)$d(a\cdot 1_B)= 0$\\
-
-  \end{tabular}
-
-\begin{tabular}{p{4cm} p{11cm}}
-
-
-  \end{tabular}
-
-\begin{tabular}{p{4cm} p{11cm}}
-
-
-  \end{tabular}
-
-\begin{tabular}{p{4cm} p{11cm}}
+	
+	
+	&\\
+	
+	$\Omega_{B/A}$ module of (relative) differential (form)s & A module of relative differential forms of B over A is a B-module $\Omega_{B/A}$ with a derivation $d:B \longrightarrow \Omega_{B/A}$ over $A$ which satisfies the universal property: for all B-modules M and all derivations $\delta : B \longrightarrow M$ over A there exists exactly one B-module homomorphism $f: \Omega_{B/A} \longrightarrow M $ with $f \circ d = \delta $ \\
+	
+	&\\
+\end{tabular}
 
 
-  \end{tabular}
-
-\begin{tabular}{p{4cm} p{11cm}}
+Consider a morphism $f:Y \longrightarrow X$. then for all open affine subsets we have:
 
 
-  \end{tabular}
 
+\begin{center}
+
+\begin{tikzcd}
+	Y \arrow[r]\arrow[d, phantom, "\cup"] & X \arrow[d, phantom , "\cup"]\\
+	Spec B\arrow[r]\arrow[d, phantom, "\cup"] & Spec A\ar[d, phantom, "\cup"]\\
+	Spec B_{ab}  \ar[r] & Spec A_a\\
+\end{tikzcd}
+
+ 	
+\end{center}
+
+Then: 
+%
+%fix this shit
+%
+%\begin{tikzcd}
+%	B_{ab}\otimes \Omega_{B/A} \ar[r ] \ar[rd] & \Omega_{B_{ab}/A_a} \ar[d, phantom , "="] \\
+%	%a & \Omega_{B\{ab}\}/A}
+%\end{tikzcd}
+
+So there is a unique sheaf of \oxmods $\Omega_{Y/X}$ with $\Omega_{Y/X}(Spec B) = \Omega_{B/A}$
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} } 
+	$\Omega_{Y/X}$ & $\Omega_{Y/X}$ is the sheaf of (relative) differentials of Y over X.  It comes with a "universal derivation"  $d:\oy \longrightarrow \Omega_{Y/X}$\\
+	
+	&\\
+	
+	sheaf of relative differential forms of degree d over Y & for any $d \geq 0$ set $\Omega_{X/Y}^d := \Lambda^d_{\ox} \Omega_{X/Y}$ the sheaf of relative differential forms of degree d over Y.\\
+	
+	&\\
+	
+	$\omega_{X/Y}$ Canonical sheaf of X over Y & if $\Omega_{X/Y}$ is locally free of rank n then $\Omega_{X/Y}^d$ is too, of rank $n\choose d$. In particular $\Omega_{X/Y}^n$ is an invertible sheaf, called the canonical sheaf of x over Y denoted $\omega_{X/Y}$.
+	
+	&\\
+	
+	
+	
+\end{longtable}
 
 \section{cohomology}
+
+\subsection{Some (quick) homological algebra}
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+	
+	
+	
+\end{longtable}
+
+
+
+\begin{tabular}{p{4cm} p{11cm}}
+
+
+  \end{tabular}
+
+\begin{tabular}{p{4cm} p{11cm}}
+
+
+  \end{tabular}
+
+\begin{tabular}{p{4cm} p{11cm}}
+
+
+  \end{tabular}
+
+\begin{tabular}{p{4cm} p{11cm}}
+
+
+  \end{tabular}
+
+
+
 
 
 
