@@ -445,9 +445,49 @@ So there is a unique sheaf of \oxmods $\Omega_{Y/X}$ with $\Omega_{Y/X}(Spec B) 
 
 \subsection{Some (quick) homological algebra}
 
+Let $ \ca{C} $ be the category of R-modules/ sheaves of abelian groups/ \oxmods on a scheme X or any abelian category.
+
 \begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
-	
-	
+  (cochain) complex & a cochain complex consists of morphisms\\
+  &$\dots \xrightarrow{d_{n-1}} X^n \xrightarrow{d_n} X^{n+1} \xrightarrow{d_{n+1}} \dots$ with $d_{n+1} \circ d_n = 0$\\
+  & Elements of $X^n$ are called n-cochains.\\
+  & Elements of $Z^n:= ker(d_n)$ n-cocycles.\\
+  & Elements of $B^n:= im(d_{n-1})$ n-coboundaries\\
+
+  &\\
+
+  $H^n(X)$ n-th cohomology & $H^n(X):= Z^n/B^n$ is the n-th cohomology of $(X^{\bullet}, d_{\bullet})$\\
+
+  &\\
+
+  acyclic & X is called acyclic if $\forall n: H^n(X)=0$\\
+
+  &\\
+
+  homomorphism of complexes & A homomorphism of complexes $f:X\rightarrow Y$ is a collection of homomorphisms $f^n:X^n\rightarrow Y^n$ such that for all n the following diagramm commutes:\\
+
+  & \begin{tikzcd} X^n \ar[r, "d_n"] \ar[d, "f_n"] &  X^{n+1} \ar[d, "f_{n+1}"]\\
+      Y^n \ar[r, "d_n"] & Y^{n+1}\\
+    \end{tikzcd}\\
+
+  &\\
+
+  augmentation of a complex & An augmentation of a complex $(X^{\bullet}, d_{\bullet})$ is a homo $ \Xi \xrightarrow{a} X^0$ such that $d_0 \circ a = 0$.\\
+  & i.e. $0 \rightarrow \Xi \xrightarrow {a} X^0 \xrightarrow{d_0} X^1 \xrightarrow{d_1} \dots $ is  a complex.\\
+  & get natural homo $\Xi \xrightarrow{a} Z^0(X) = H^0(X)$\\
+
+  &\\
+
+  (cochain) homotopy & consider two homos of complexes $f,g: X\longrightarrow Y$. A cochain homotopy from f to g is  a collection of homos $h:X^{n+1} \rightarrow Y^n$ such that $f-g= d \circ h + h \circ d $ \\
+  & If such h exists, f and g are called homotopic and we write $f\simeq g$ \\
+
+  &\\
+
+  X contractible & X is contractible if $id_X$ is homotopic to 0\\
+
+  &\\
+
+  
 	
 \end{longtable}
 
