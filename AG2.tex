@@ -16,6 +16,7 @@
 \newcommand{\ca}[1]{\mathcal{#1}}
 \newcommand{\caf}{\mathcal{F}}
 \newcommand{\cag}{\mathcal{G}}
+\newcommand{\cau}{\mathcal{U}}
 \newcommand{\oxmod}{$\mathcal{O}_X$-module }
 \newcommand{\oxmods}{$\mathcal{O}_X$-modules}
 \newcommand{\oymod}{$\mathcal{O}_Y$-module }
@@ -278,18 +279,18 @@ field of rational functions on X & the constant sheaf $\ca(K)_X:= \underline{K}$
 %\begin{tabular}{p{4cm} p{11cm}}
 
   $\ox(D)(U)$ & For any Cartier divisor $D = ([f_x]) x \in X $ and any open $U \subset X$ set:\\
-  & \[
+   &\[
   \ox(D)(U) = \begin{cases}
-    \{0\} if U= \emptyset\\
-    \bigcap_{x\in U}f_x^{-1}\oxx  else\\
+    \{0\} & $ if $ U= \emptyset\\
+    \bigcap_{x\in U}f_x^{-1}\oxx & $ else $ \\
     \end{cases}
-    \]
-    \\
-    \\
+  \] \\
+  
+    &\\
 
     locally factorial scheme & A noetherian integral scheme such that $\forall x \in X  \oxx $ is factorial is called locally factorial.\\
 
-    \\
+   & \\
 %\end{tabular}
 
 %\begin{tabular}{p{4cm} p{11cm}}
@@ -300,7 +301,7 @@ field of rational functions on X & the constant sheaf $\ca(K)_X:= \underline{K}$
   &$\iff \ox(-D)$ is a quasicoherent sheaf of ideals of $ \ox$ \\
   & $\iff $ D corresponds to a closed subscheme locally given by  one equation $f_i$ i.e. locally principal. this subscheme determines D. \\
 
-  \\
+  &\\
 
   principal cartier divisor & A cartier divisor of the form $div(f) := (f) := ([f])_{x \in X}$ for some $f \in K^{\times}$ is called principal.\\
 
@@ -487,32 +488,70 @@ Let $ \ca{C} $ be the category of R-modules/ sheaves of abelian groups/ \oxmods 
 
   &\\
 
+  quasi-isomorphism of complexes & A homo of complexes $f:X^{\bullet} \longrightarrow Y^{\bullet}$ is called a quasi-isomorphism if $\forall n \in \mathbb{Z} :$ $H^n(f):H^n(X^{\bullet}) \xrightarrow{~} H^n(Y^{\bullet}))$ is an isomorphism.\\
+
+  &\\
+
+  
   
 	
 \end{longtable}
 
+\subsection{Cech Cohomology}
+
+Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open covering $\ca{U}:=(U_{i))_{i \in I}$  of $ X $. The $U_i$ need not be distict or nonempty.
 
 
-\begin{tabular}{p{4cm} p{11cm}}
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  $C^{\bullet}(\ca{U}, \caf )$(total) cech complex & For any p set:\\
+  & \[  C^p(\ca{U},\caf):=
+  \begin{cases}
+    \prod_{i_0,\dots , i_p \in I}\caf(U_{i_0}\cap \dots \cap U_{i_p}) &  for  p \geq 0\\
+    0 & for  p<0\\
+    
+    \end{cases}
+
+  \]\\
+  & $d:C^p(\ca{U} , \caf ) \longrightarrow C^{p+1}(\ca{U} , \caf)$\\
+  & $(f_{i_0 \dots i_p})_{i_0 \dots i_p} \longmapsto (\sum_{k=0}^{p+1} (-1)^k \dot f_{i_0,\dots , \hat{i_k}, \dots , i_{p+1}}|_U_{i_0 \dots i_{p+1}})_{i_0 \dots i_{p+1}}$\\
+  &this is the (total) cech complex. \\
+
+  &\\
+
+  $H^n(\ca{U}, \caf)$ &  $H^n(\ca{U}, \caf):=H^n(C^{\bullet}(\ca{U}, \caf))$\\
+
+  &\\
+
+  %
+  %
+  %fix formatting of def below
+  %
+  %
 
 
-  \end{tabular}
+  
+  $C^{\bullet}_{alt}(\cau , \caf)$ alternating cech complex &
+  \[ C^n_{alt}(\cau, \caf) :=   \{ (f_{i_0 \dots i_p}) \in C^p(\cau, \caf) \quad | \quad \forall i_0 \dots i_p \, : \, f_{i_0 \dots i_p} \text{ if not all $i_0 \dots i_p$ are distinct } and \forall \sigma \in S_{p+1} : f_{i_{\sigma 0} \dots i_{\sigma p}} = sign(\sigma) \dot f_{i_0 \dots i_p} \}
+  \]
 
-\begin{tabular}{p{4cm} p{11cm}}
+  &\\
+
+  $C^{\bullet}_{ord}(\cau , \caf) $ ordered cech complex & As alternating cech complex but now assume $I$ comes with a total order $<$\\
+  &Then $C^{\bullet}_{ord}(\cau, \caf)$ with $i_0 < \dots < i_p $ \\
+
+  &\\
+
+  
+  
+\end{longtable}
 
 
-  \end{tabular}
 
-\begin{tabular}{p{4cm} p{11cm}}
-
-
-  \end{tabular}
-
-\begin{tabular}{p{4cm} p{11cm}}
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
 
 
-  \end{tabular}
-
+\end{longtable}
 
 
 

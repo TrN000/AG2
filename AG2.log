@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  10 FEB 2018 00:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  11 FEB 2018 23:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -467,18 +467,18 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 (./AG2.aux)
 \openout1 = `AG2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -572,131 +572,131 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for U+msa on input line 35.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 35.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in paragraph at lines 36--38
+Underfull \hbox (badness 10000) in paragraph at lines 37--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--52
+Underfull \hbox (badness 10000) in paragraph at lines 45--53
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 53--55
+Underfull \hbox (badness 10000) in paragraph at lines 54--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--58
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 59--61
+Underfull \hbox (badness 10000) in paragraph at lines 60--62
 
  []
 
 
-Underfull \hbox (badness 7133) in paragraph at lines 70--72
+Underfull \hbox (badness 7133) in paragraph at lines 71--73
 []|\OT1/cmr/m/n/12 the di-rect sum $[] \OMS/cmsy/m/n/12 F[]$ \OT1/cmr/m/n/12 is
  the sheafi-fi-ca-tion the presheaf
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 61--86
+Overfull \hbox (24.0pt too wide) in alignment at lines 62--87
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
 []\OT1/cmr/m/n/12 locally free $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 99--121
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 100--122
 [][] 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 128--131
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--133
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 134--136
+Underfull \hbox (badness 10000) in paragraph at lines 135--137
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--140
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 []\OT1/cmr/m/n/12 quasicoherent $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 137--146
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 138--147
 [][] 
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 156--174
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 157--175
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 200--200
+Underfull \hbox (badness 10000) in paragraph at lines 201--201
 []\OT1/cmr/m/n/12 push-forward of a
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 212--213
+Underfull \hbox (badness 2080) in paragraph at lines 213--214
 []\OT1/cmr/m/n/12 Let $\OMS/cmsy/m/n/12 F$ \OT1/cmr/m/n/12 be a qua-si-co-her-e
 nt, finitely gen-er-ated $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -module .
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 197--217
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 198--218
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 197--217
+Underfull \hbox (badness 10000) in paragraph at lines 198--218
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 227--228
+Underfull \hbox (badness 10000) in paragraph at lines 228--229
 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 260--306
+Overfull \hbox (23.99998pt too wide) in alignment at lines 261--307
  [] [] 
  []
 
@@ -704,85 +704,173 @@ Overfull \hbox (23.99998pt too wide) in alignment at lines 260--306
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ¹ in font cmr12!
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 306--364
+Overfull \hbox (23.99998pt too wide) in alignment at lines 307--365
  [] [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 364--377
+Overfull \hbox (23.99998pt too wide) in alignment at lines 365--378
  [] [] 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 382--383
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 395--395
+Underfull \hbox (badness 10000) in paragraph at lines 396--396
 \OT1/cmr/m/n/12 a-tive) dif-fer-en-tial
  []
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 436.
+(amsmath)                 on input line 437.
 
 ! Extra alignment tab has been changed to \cr.
 <recently read> \endtemplate 
                              
-l.438 	&
+l.439 	&
         \\
 ? 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 427--442
+Overfull \hbox (24.0pt too wide) in alignment at lines 428--443
  [] [] 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 467--467
+Underfull \hbox (badness 10000) in paragraph at lines 468--468
 []|\OT1/cmr/m/n/12 homomorphism of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--475
+Underfull \hbox (badness 10000) in paragraph at lines 476--476
 []|\OT1/cmr/m/n/12 augmentation of a
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 450--485
+Overfull \hbox (24.0pt too wide) in alignment at lines 451--486
  [] [] 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 485--492
+Underfull \hbox (badness 1365) in paragraph at lines 491--491
+[]|\OT1/cmr/m/n/12 quasi-isomorphism of
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 486--498
  [] [] 
  []
 
-[6] [7] (./AG2.aux) ) 
+[6]
+! Missing } inserted.
+<inserted text> 
+                }
+l.502 ...open covering $\ca{U}:=(U_{i))_{i \in I}$
+                                                    of $ X $. The $U_i$ need...
+
+? 
+
+Underfull \hbox (badness 5022) in paragraph at lines 507--507
+[]|$\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \
+OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 )$(total) cech
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.514 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.514 
+      
+? 
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.515   \]
+          \\
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.515   \]
+          \\
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.515   \]
+          \\
+? 
+! Double subscript.
+l.517 ...0,\dots , \hat{i_k}, \dots , i_{p+1}}|_U_
+                                                  {i_0 \dots i_{p+1}})_{i_0 ...
+
+? 
+
+Overfull \hbox (305.11504pt too wide) detected at line 536
+\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \OMS/
+cmsy/m/n/12 F\OT1/cmr/m/n/12 ) := \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m
+/it/12 f[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C[]\OT1/cmr/m/n
+/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 ) \
+OMS/cmsy/m/n/12 j 8\OML/cmm/m/it/12 i[] [] i[]  \OT1/cmr/m/n/12 :  \OML/cmm/m/i
+t/12 f[][]and\OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 ^^[ \OMS/cmsy/m/n/12 2 \OML/cmm
+/m/it/12 S[] \OT1/cmr/m/n/12 : \OML/cmm/m/it/12 f[] \OT1/cmr/m/n/12 = \OML/cmm/
+m/it/12 sign\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^[\OT1/cmr/m/n/12 )[]\OMS/cmsy/m
+/n/12 g
+ []
+
+! Extra alignment tab has been changed to \cr.
+<recently read> \endtemplate 
+                             
+l.538   &
+         \\
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--540
+[]|$\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \
+OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 )$ or-dered
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 505--547
+ [] [] 
+ []
+
+[7] (./AG2.aux) ) 
 Here is how much of TeX's memory you used:
- 13930 strings out of 494953
- 284057 string characters out of 6180977
- 334899 words of memory out of 5000000
- 16952 multiletter control sequences out of 15000+600000
- 11797 words of font info for 46 fonts, out of 8000000 for 9000
+ 13938 strings out of 494953
+ 284115 string characters out of 6180977
+ 334966 words of memory out of 5000000
+ 16958 multiletter control sequences out of 15000+600000
+ 12442 words of font info for 49 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  61i,22n,84p,469b,997s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-ex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/s
-ymbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb>
-Output written on AG2.pdf (7 pages, 166624 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on AG2.pdf (7 pages, 171160 bytes).
 PDF statistics:
  87 PDF objects out of 1000 (max. 8388607)
  63 compressed objects within 1 object stream
