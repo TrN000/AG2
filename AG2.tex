@@ -580,12 +580,175 @@ Let $\ca{C}$ be the category whose objects are all open coverings and $Mor_{\ca{
 \begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
 
   $R^pf_*\caf$ the p-th higher direct image of $\caf $ & The associated sheaf to the sheaf above is called the p-th higher direct image (sheaf) of $\caf$ with respect to $f$ \\
-
+  &Note: $R^pf_*\caf = 0$ for $p<0$\\
+  &Fact: $R^0f_*\caf = f_*\caf$  (no sheafification required)\\
+  
   &\\
+
+
 \end{longtable}
 
 
+\subsection{Duality}
 
+
+Construction: Take \oxmods $\caf $,  $ \cag$\\
+
+%
+%
+%
+%fix this shite
+%
+%%
+%
+
+
+
+\begin{alignat*}{2}
+
+  H^0(X, \caf) \times H^p(X,\cag) & \longrightarrow H^p(X, \caf \otimes \cag)\\
+  (f,\xi) & \longmapsto H^p(L_f)(\xi)
+
+  f:L_f: \cag \rightarrow \caf \otimes \cag , g \mapsto f \otimes g
+\end{alignat*}
+
+
+more generally $H^p \times H^q \longrightarrow H^{p+q}$  (cup product)
+%
+%
+%
+%
+%
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  perfect pairing & An $A$-bilinear map $M\times N \longrightarrow L$ for $A$-modules $M,N,L$ of finite rank with $L$ of rank 1 is a perfect pairing if:\\
+
+  & the representing matrix is invertible w.r.t. any bases\\
+  & b induces an iso $M \xrightarrow{\sim} Hom_A(N,L)$  $m\mapsto b(m, -)$\\
+  & b induces an iso $N \xrightarrow{\sim} Hom_A(M,L)$\\
+
+  &\\
+
+\end{longtable}
+
+Fix a proj morphism $f:X \longrightarrow Y$ with Y locally noetherian fix $r \geq 0$ such that all fibers of $f$ have dimension $\leq r$.\\
+
+
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  (r-)duality sheaf for $f$ & A duality sheaf is a quasi-coherent sheaf $\omega_f$ on $X$ together with a homo of \oxmods $tr_f:R^rf_*\omega_f \longrightarrow \oy $ (trace map) such that for every quasicoherent sheaf $\caf$ on $X$ the natural bilinear map:\\
+
+  &  \[  f_* \ca{H}om_{\ox}(\caf, \omega_f) \times R^rf_* \caf \longrightarrow R^rf_*\omega_f \xrightarrow{tr_f} \oy\]\\
+  %
+  %
+  %
+  %
+  %here details of map not yet written.
+  %
+  %
+  %
+
+  & induces an iso $f_*\ca{H}om_{\ox}(\caf, \omega_f) \xrightarrow{\sim} \ca{H}om_{\oy}(R^rf_*\caf , \oy)$ \\
+
+  & Note: For $Y = Spec A$ this means: $\ca{H}om_{\ox}(\caf, \omega_f) \xrightarrow{\sim} \ca{H}om_{\oy}(H^r(X,\caf) , A)$\\
+
+  &\\
+  
+\end{longtable}
+
+
+\subsection{Flat base change}
+
+Recall: An $A$-module $M$ is flat iff $((A-mods))\longrightarrow ((A-mods)) N\mapsto M\otimes_A N$ is exact.
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  flat \oxmod & A sheaf of \oxmods $\caf$ is flat if $\forall x \in X: \caf_x$ is a flat \oxmod\\
+
+  &\\
+
+  flat morphism & A morphism $f:X\longrightarrow Y$ is flat iff $\forall x \in X:$ $\oxx$ is a flat $\oyy$ modules\\
+
+  &\\
+  
+\end{longtable}
+
+Consider an arbitrary commutative diagram:
+
+\begin{tikzcd}
+  X' \ar[r, "g'"] \ar[d, "f'"] & X \ar[r, phantom , "\supset"] \ar[d, "f"] & f^{-1}(V) \ar[d] \\
+  Y' \ar[r, "g"] & Y \ar[r, phantom , "\supset"] & V\\
+\end{tikzcd}
+
+Let $\caf$ be a sheaf of \oxmods . for any open $V \subset Y$:
+\[ H^p(f^{-1}(V) , \caf(f^{-1}(V))) \xrightarrow{6.4} H^p(g'^{-1}(f^{-1}(V)) , g'^* \caf|_{g'^{-1}(f^{-1}(V))}) \]
+
+
+%
+%%
+%
+%
+%equal to right side put in under it:
+%H^p(f'^{-1}(g^{-1}) , g'^* \caf |_{f'^{-1}(g^{-1})}) 
+%%
+%%
+%
+%
+%
+%
+%
+
+
+
+Varying $V$ this defines a homo of presheaves $\Rightarrow$ sheafify.\\
+
+Let
+\[
+
+(R^pf_* \caf)(V) \longrightarrow (R^pf'_*)(g'^* \caf)(g^{-1}(V))
+
+%
+%
+%
+%insert under rhs
+%(g_*R^pf'_*g'\caf)(V)
+%
+%
+
+\]
+
+
+be the resulting homo of sheaves. Take its adjoint.
+
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  base change homo & this is the base change homo:\\
+
+  & $g^*R^pf_* \caf \xrightarrow{BC} R^pf'_*g'^* \caf$\\
+
+  &\\
+
+    
+\end{longtable}
+
+
+\section{Riemann-Roch and Serre duality}
+
+\subsection{Divisors on curves}
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  
+\end{longtable}
+
+
+\begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
+
+  
+\end{longtable}
 
 \end{document}
 
