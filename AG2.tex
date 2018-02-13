@@ -434,7 +434,7 @@ So there is a unique sheaf of \oxmods $\Omega_{Y/X}$ with $\Omega_{Y/X}(Spec B) 
 	
 	&\\
 	
-	$\omega_{X/Y}$ Canonical sheaf of X over Y & if $\Omega_{X/Y}$ is locally free of rank n then $\Omega_{X/Y}^d$ is too, of rank $n\choose d$. In particular $\Omega_{X/Y}^n$ is an invertible sheaf, called the canonical sheaf of x over Y denoted $\omega_{X/Y}$.
+	$\omega_{X/Y}$ Canonical sheaf of X over Y & if $\Omega_{X/Y}$ is locally free of rank n then $\Omega_{X/Y}^d$ is too, of rank $n\choose d$. In particular $\Omega_{X/Y}^n$ is an invertible sheaf, called the canonical sheaf of x over Y denoted $\omega_{X/Y}$.\\
 	
 	&\\
 	
@@ -499,7 +499,7 @@ Let $ \ca{C} $ be the category of R-modules/ sheaves of abelian groups/ \oxmods 
 
 \subsection{Cech Cohomology}
 
-Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open covering $\ca{U}:=(U_{i))_{i \in I}$  of $ X $. The $U_i$ need not be distict or nonempty.
+Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open covering $\ca{U}:=(U_{i})_{i \in I}$  of $ X $. The $U_i$ need not be distict or nonempty.
 
 
 \begin{longtable}{p{.25\textwidth}  p{.75\textwidth} }
@@ -510,11 +510,10 @@ Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open
     \prod_{i_0,\dots , i_p \in I}\caf(U_{i_0}\cap \dots \cap U_{i_p}) &  for  p \geq 0\\
     0 & for  p<0\\
     
-    \end{cases}
-
-  \]\\
+    \end{cases}  \]\\
+    
   & $d:C^p(\ca{U} , \caf ) \longrightarrow C^{p+1}(\ca{U} , \caf)$\\
-  & $(f_{i_0 \dots i_p})_{i_0 \dots i_p} \longmapsto (\sum_{k=0}^{p+1} (-1)^k \dot f_{i_0,\dots , \hat{i_k}, \dots , i_{p+1}}|_U_{i_0 \dots i_{p+1}})_{i_0 \dots i_{p+1}}$\\
+  & $(f_{i_0 \dots i_p})_{i_0 \dots i_p} \longmapsto (\sum_{k=0}^{p+1} (-1)^k \dot f_{i_0,\dots , \hat{i_k}, \dots , i_{p+1}}|_{U_{i_0 \dots i_{p+1}}})_{i_0 \dots i_{p+1}} $ \\
   &this is the (total) cech complex. \\
 
   &\\
@@ -533,7 +532,7 @@ Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open
   
   $C^{\bullet}_{alt}(\cau , \caf)$ alternating cech complex &
   \[ C^n_{alt}(\cau, \caf) :=   \{ (f_{i_0 \dots i_p}) \in C^p(\cau, \caf) \quad | \quad \forall i_0 \dots i_p \, : \, f_{i_0 \dots i_p} \text{ if not all $i_0 \dots i_p$ are distinct } and \forall \sigma \in S_{p+1} : f_{i_{\sigma 0} \dots i_{\sigma p}} = sign(\sigma) \dot f_{i_0 \dots i_p} \}
-  \]
+  \] \\
 
   &\\
 
@@ -542,7 +541,7 @@ Let $\caf$ be a sheaf of abelian groups of a topological space $X$. Take an open
 
   &\\
 
-  refinement of open covering & For $\cau := (U_i)_{i \in I}$ and $\ca{V} := (V_j)_{j \in J}$ we say $\ca{V}$ is a refinement if there exists a map $\sigma : I \longrightarrow J $ such that $\forall j \in J : V_j \subset U_{\sigma j}$
+  refinement of open covering & For $\cau := (U_i)_{i \in I}$ and $\ca{V} := (V_j)_{j \in J}$ we say $\ca{V}$ is a refinement if there exists a map $\sigma : I \longrightarrow J $ such that $\forall j \in J : V_j \subset U_{\sigma j}$\\
 
 &\\  
   
@@ -571,7 +570,7 @@ Let $\ca{C}$ be the category whose objects are all open coverings and $Mor_{\ca{
   We have a natural homo: $H^p(Y,f_* \caf) \rightarrow H^p(X, \caf)$ and $H^p(Y, \cag) \rightarrow H^p(X, f^* \cag)$
   \\
 
-  Special case: $U \subset X$ open $\squigarrow$ natural "restriction map" $H^p(X, \caf)\longrightarrow H^p(U, \caf |_U)$.\\
+  Special case: $U \subset X$ open $\rightsquigarrow$ natural "restriction map" $H^p(X, \caf)\longrightarrow H^p(U, \caf |_U)$.\\
 
   Special case: For all open $V' \subset V \subset Y$ the restriction map  for $f^{-1}(V') \subset f^{-1}(V)$ makes this into a presheaf of \oymods on $Y$.\\
 
@@ -605,13 +604,12 @@ Construction: Take \oxmods $\caf $,  $ \cag$\\
 
 
 \begin{alignat*}{2}
-
   H^0(X, \caf) \times H^p(X,\cag) & \longrightarrow H^p(X, \caf \otimes \cag)\\
-  (f,\xi) & \longmapsto H^p(L_f)(\xi)
-
+  (f,\xi) & \longmapsto H^p(L_f)(\xi) \\
   f:L_f: \cag \rightarrow \caf \otimes \cag , g \mapsto f \otimes g
 \end{alignat*}
 
+ 
 
 more generally $H^p \times H^q \longrightarrow H^{p+q}$  (cup product)
 %
@@ -706,9 +704,7 @@ Varying $V$ this defines a homo of presheaves $\Rightarrow$ sheafify.\\
 
 Let
 \[
-
 (R^pf_* \caf)(V) \longrightarrow (R^pf'_*)(g'^* \caf)(g^{-1}(V))
-
 %
 %
 %
@@ -716,7 +712,6 @@ Let
 %(g_*R^pf'_*g'\caf)(V)
 %
 %
-
 \]
 
 
