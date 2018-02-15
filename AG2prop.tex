@@ -11,6 +11,8 @@
 \usepackage{amssymb}
 \usepackage{tikz-cd}
 \usepackage{longtable}
+\usepackage{amsthm}
+
 
 
 \newcommand{\ca}[1]{\mathcal{#1}}
@@ -27,12 +29,14 @@
 \newcommand{\oyy}{\mathcal{O}_{Y,y}}
 
 
+\newtheorem*{theorem}{Prop}
+
 \begin{document}
 	
 	
 	\setcounter{section}{4}
 	
-	{\LARGE Propositions and Theorems}
+%	{\LARGE Propositions and Theorems}
 	
 	
 	\section{Sheaves of Modules}
@@ -41,7 +45,45 @@
 	
 	\section{Cohomology}
 	
+
 	\section{Riemann-Roch and Serre duality}
+
+
+        \subsection{Divisors on curves}
+
+        Let $X$ be regular integral projective scheme of dim 1 over a field $k$\\
+
+        \begin{theorem}
+          If $D$ is the effective divisor associated to a fin closed subscheme:
+        \begin{enumerate}
+        \item $T \subset X$ then $D = \sum_{P \in T} length(\ca{O}_{T,P} \cdot P)$
+          \item and $deg_k(D) = \sum_{P \in T} lenth(\ca{O}_{T,P}) \cdot [k(P)/k] = dim_k\Gamma(T, \ca{O}_T) \overset{§4.8}{=:} deg(T)$\\
+        \end{enumerate}        
+        \end{theorem}
+
+
+        \begin{theorem}
+          If $k'$ is a fin extension of $k$ $\Rightarrow$ $deg_k(D) = deg_{k'}(D) \cdot [k'/k]$\\
+        \end{theorem}
+        
+        
+        \begin{theorem}
+          For any field extension $k'/k$ let $X':= X_{k'} = X \times_{Spec(k)} Spec(k') \xrightarrow{\pi} X$\\
+          Assume $X'$ integral then $deg_{k'}(\pi^*D) = deg_k(D)$\\
+        \end{theorem}
+
+        %
+        %
+        %formatting below
+        %%
+        %
+        \begin{theorem}{Theorem}
+          asdf
+        \end{theorem}
+        
+        \begin{theorem}
+        \end{theorem}
+        
 	
 	
 	
