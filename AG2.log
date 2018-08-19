@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.31)  14 FEB 2018 00:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.28)  18 AUG 2018 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,75 +799,75 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--155
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 156--158
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 162--162
+Underfull \hbox (badness 10000) in paragraph at lines 170--170
 []\OT1/cmr/m/n/12 quasicoherent $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 159--168
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 167--176
 [][] 
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 178--196
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 186--204
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
+Underfull \hbox (badness 10000) in paragraph at lines 222--223
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 230--230
 []\OT1/cmr/m/n/12 push-forward of a
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 234--235
+Underfull \hbox (badness 2080) in paragraph at lines 242--243
 []\OT1/cmr/m/n/12 Let $\OMS/cmsy/m/n/12 F$ \OT1/cmr/m/n/12 be a qua-si-co-her-e
 nt, finitely gen-er-ated $\OMS/cmsy/m/n/12 O[]$\OT1/cmr/m/n/12 -module .
  []
 
 
-Overfull \hbox (26.27618pt too wide) in paragraph at lines 219--239
+Overfull \hbox (26.27618pt too wide) in paragraph at lines 227--247
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 219--239
+Underfull \hbox (badness 10000) in paragraph at lines 227--247
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 248.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 240.
+(hyperref)                removing `subscript' on input line 248.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 240.
+(hyperref)                removing `math shift' on input line 248.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--246
+Underfull \hbox (badness 10000) in paragraph at lines 252--254
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--250
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 282--328
+Overfull \hbox (23.99998pt too wide) in alignment at lines 298--344
  [] [] 
  []
 
@@ -875,68 +875,68 @@ Overfull \hbox (23.99998pt too wide) in alignment at lines 282--328
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ¹ in font cmr12!
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 328--386
+Overfull \hbox (23.99998pt too wide) in alignment at lines 344--402
  [] [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 386--399
+Overfull \hbox (23.99998pt too wide) in alignment at lines 402--415
  [] [] 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 404--405
+Underfull \hbox (badness 10000) in paragraph at lines 420--421
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 417--417
+Underfull \hbox (badness 10000) in paragraph at lines 433--433
 \OT1/cmr/m/n/12 a-tive) dif-fer-en-tial
  []
 
 
 Package amsmath Warning: Foreign command \atopwithdelims;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 458.
+(amsmath)                 on input line 474.
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 449--464
+Overfull \hbox (24.0pt too wide) in alignment at lines 465--480
  [] [] 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 489--489
+Underfull \hbox (badness 10000) in paragraph at lines 505--505
 []|\OT1/cmr/m/n/12 homomorphism of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 497--497
+Underfull \hbox (badness 10000) in paragraph at lines 513--513
 []|\OT1/cmr/m/n/12 augmentation of a
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 472--507
+Overfull \hbox (24.0pt too wide) in alignment at lines 488--523
  [] [] 
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 512--512
+Underfull \hbox (badness 1365) in paragraph at lines 528--528
 []|\OT1/cmr/m/n/12 quasi-isomorphism of
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 507--519
+Overfull \hbox (24.0pt too wide) in alignment at lines 523--535
  [] [] 
  []
 
 [7]
-Underfull \hbox (badness 5022) in paragraph at lines 528--528
+Underfull \hbox (badness 5022) in paragraph at lines 544--544
 []|$\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \
 OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 )$(total) cech
  []
 
 
-Overfull \hbox (305.11504pt too wide) detected at line 556
+Overfull \hbox (305.11504pt too wide) detected at line 572
 \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \OMS/
 cmsy/m/n/12 F\OT1/cmr/m/n/12 ) := \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 (\OML/cmm/m
 /it/12 f[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C[]\OT1/cmr/m/n
@@ -949,28 +949,28 @@ m/it/12 sign\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^[\OT1/cmr/m/n/12 )[]\OMS/cmsy/m
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 560--560
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
 []|$\OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \
 OMS/cmsy/m/n/12 F\OT1/cmr/m/n/12 )$ or-dered
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 565--565
+Underfull \hbox (badness 10000) in paragraph at lines 581--581
 []|\OT1/cmr/m/n/12 refinement of open
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 526--569
+Overfull \hbox (24.0pt too wide) in alignment at lines 542--585
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 587--588
 
  []
 
 
-Overfull \hbox (1.52907pt too wide) in paragraph at lines 573--574
+Overfull \hbox (1.52907pt too wide) in paragraph at lines 589--590
 []\OT1/cmr/m/n/12 Let $\OMS/cmsy/m/n/12 C$ \OT1/cmr/m/n/12 be the cat-e-gory wh
 ose ob-jects are all open cov-er-ings and $\OML/cmm/m/it/12 Mor[]\OT1/cmr/m/n/1
 2 (\OMS/cmsy/m/n/12 U\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 V\OT1/cmr/m/n/12 ) := 
@@ -979,139 +979,139 @@ ose ob-jects are all open cov-er-ings and $\OML/cmm/m/it/12 Mor[]\OT1/cmr/m/n/1
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 573--574
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
 
  []
 
 
-Underfull \hbox (badness 8113) in paragraph at lines 577--577
+Underfull \hbox (badness 8113) in paragraph at lines 593--593
 []|$\OML/cmm/m/it/12 H[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 X; \OMS/cmsy/m/n/12 F
 \OT1/cmr/m/n/12 )$ the n-th
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 575--581
+Overfull \hbox (24.0pt too wide) in alignment at lines 591--597
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 590--593
+Underfull \hbox (badness 10000) in paragraph at lines 606--609
 
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 594--595
+Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 596--597
+Underfull \hbox (badness 10000) in paragraph at lines 612--613
 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 600--609
+Overfull \hbox (24.0pt too wide) in alignment at lines 616--625
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 615--616
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 642--652
+Overfull \hbox (24.0pt too wide) in alignment at lines 658--668
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 654--655
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
 
  []
 
 
-Underfull \hbox (badness 2158) in paragraph at lines 674--675
+Underfull \hbox (badness 2158) in paragraph at lines 690--691
 []|\OT1/cmr/m/n/12 Note: For $\OML/cmm/m/it/12 Y \OT1/cmr/m/n/12 = \OML/cmm/m/i
 t/12 SpecA$ \OT1/cmr/m/n/12 this means: $\OMS/cmsy/m/n/12 H\OML/cmm/m/it/12 om[
 ]\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 F\OML/cmm/m/it/12 ; ![]\OT1/cmr/m/n/12 ) []
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 658--678
+Overfull \hbox (24.0pt too wide) in alignment at lines 674--694
  [] [] 
  []
 
 [9]
-Overfull \hbox (24.0pt too wide) in alignment at lines 685--695
+Overfull \hbox (24.0pt too wide) in alignment at lines 701--711
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 724--725
+Underfull \hbox (badness 10000) in paragraph at lines 740--741
 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 742--751
+Overfull \hbox (24.0pt too wide) in alignment at lines 758--767
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+Underfull \hbox (badness 10000) in paragraph at lines 774--775
 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 761--767
+Overfull \hbox (24.0pt too wide) in alignment at lines 777--783
  [] [] 
  []
 
 Missing character: There is no Â in font cmr12!
 Missing character: There is no § in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 775--778
+Underfull \hbox (badness 10000) in paragraph at lines 791--794
 
  []
 
 [10]
-Overfull \hbox (24.0pt too wide) in alignment at lines 779--794
+Overfull \hbox (24.0pt too wide) in alignment at lines 795--810
  [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 799--800
+Underfull \hbox (badness 10000) in paragraph at lines 815--816
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 801--802
+Underfull \hbox (badness 10000) in paragraph at lines 817--818
 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 804--822
+Overfull \hbox (24.0pt too wide) in alignment at lines 820--838
  [] [] 
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 832--835
+Overfull \hbox (24.0pt too wide) in alignment at lines 848--851
  [] [] 
  []
 
 [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 858.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 858.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 874.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 874.
  (./AG2.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 858.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 858.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 874.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 874.
 Package rerunfilecheck Info: File `AG2.out' has not changed.
 (rerunfilecheck)             Checksum: 14CC86C27B88D8E1313C6B7B90588C9D;1929.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 858.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 874.
  ) 
 Here is how much of TeX's memory you used:
  17585 strings out of 494953
  339930 string characters out of 6180977
- 413131 words of memory out of 5000000
+ 413133 words of memory out of 5000000
  20520 multiletter control sequences out of 15000+600000
  13048 words of font info for 51 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1129,7 +1129,7 @@ cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on AG2.pdf (11 pages, 193437 bytes).
+Output written on AG2.pdf (11 pages, 193440 bytes).
 PDF statistics:
  310 PDF objects out of 1000 (max. 8388607)
  280 compressed objects within 3 object streams

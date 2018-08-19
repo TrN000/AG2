@@ -1,17 +1,29 @@
+%\input{stdpreamble.tex}
 
 \documentclass[a4paper, 12pt]{article}
-\parindent0pt
+\parindent5pt
 
 
 \relpenalty=9999
 \binoppenalty=9999
 
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=1.2in]{geometry}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{tikz-cd}
 \usepackage{longtable}
 \usepackage{amsthm}
+\usepackage{color}   %May be necessary if you want to color links
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, %set true if you want colored links
+	linktoc=all,     %set to all if you want both sections and subsections linked
+	linkcolor=blue,  %choose some color if you want links to stand out
+}
+\usepackage[normalem]{ulem}
+\usepackage{marginnote}
+\usepackage{mathabx}
+
 
 
 
@@ -19,76 +31,1270 @@
 \newcommand{\caf}{\mathcal{F}}
 \newcommand{\cag}{\mathcal{G}}
 \newcommand{\cau}{\mathcal{U}}
+\newcommand{\caa}{\mathcal{A}}
+\newcommand{\cl}{\mathcal{L}}
 \newcommand{\oxmod}{$\mathcal{O}_X$-module }
-\newcommand{\oxmods}{$\mathcal{O}_X$-modules}
+\newcommand{\oxmods}{$\mathcal{O}_X$-modules }
 \newcommand{\oymod}{$\mathcal{O}_Y$-module }
-\newcommand{\oymods}{$\mathcal{O}_Y$-modules}
+\newcommand{\oymods}{$\mathcal{O}_Y$-modules }
 \newcommand{\ox}{\mathcal{O}_X}
 \newcommand{\oy}{\mathcal{O}_Y}
 \newcommand{\oxx}{\mathcal{O}_{X,x}}
 \newcommand{\oyy}{\mathcal{O}_{Y,y}}
+\newcommand{\hhom}{\mathcal{H}om}
+\newcommand{\bbp}{\mathbb{P}}
+\newcommand{\bbz}{\mathbb{Z}}
 
 
-\newtheorem*{theorem}{Prop}
+\newtheorem*{prop}{Prop}
+
+\newtheorem*{lem}{Lemma}
+
+\newtheorem*{fact}{Fact}
+
+\newtheorem*{up}{Universal Property}
+
+\newtheorem*{thmdef}{Definition/Theorem}
+
+\newtheorem*{thm}{Theorem}
+
+\newtheorem*{defn}{Definition}
+
+\newtheorem*{note}{Note}
+
+\newtheorem*{cor}{Corollary}
+
+
+\DeclareMathOperator{\mor}{Mor}
+
+\DeclareMathOperator{\ob}{Ob}
+
+\DeclareMathOperator{\id}{id}
+
+\DeclareMathOperator{\spec}{Spec}
+
+\DeclareMathOperator{\kom}{Kom}
+
+\DeclareMathOperator{\Hom}{Hom}
+
+\DeclareMathOperator{\R}{R}
+
+\DeclareMathOperator{\K}{K}
+
+\DeclareMathOperator{\proj}{Proj}
+
+
 
 \begin{document}
-	
-	
+		
+			\tableofcontents
+			
+			
 	\setcounter{section}{4}
 	
-%	{\LARGE Propositions and Theorems}
 	
 	
+	{\LARGE Propositions and Theorems}
+		
 	\section{Sheaves of Modules}
-	
+		
 	\subsection{\oxmods}
+	
+	\begin{fact}
+	For any \oxmod $ \caf $ and any $ x \in X $ the stalk $ \caf_x = \varinjlim \caf(U) $ is a module over $ \oxx $
+	\end{fact}
+	\begin{lem}
+		For any presheaf of \oxmods $ \caf $ , the sheafification $ \tilde{\caf} $ is naturally a sheaf of \oxmods and it satisfies the analogous universal property:
+		
+		For all sheaves of \oxmods $ \cag $ : $ \Hom_{\ox}(\caf, \cag) \cong \Hom_{\ox} (\tilde{\caf , \cag}) $
+		
+	\end{lem}	
+	\begin{fact}
+	for $ \caf_i $ \oxmods, $ \prod \caf_i $ is a sheaf (since $\prod$ is a $\varprojlim$ )
+	\end{fact}
+	\begin{fact}
+		$ \bigoplus\caf_i $ is the sheafification of $ U \mapsto \bigoplus \caf_i(U) $
+		
+		It is a subsheaf of $ \prod \caf_i $ with equality if $ |I|<\infty $
+	\end{fact}
+	\begin{up}
+	 $ \Hom_{\ox}(\bigoplus \caf_i , \cag) \cong   \bigtimes \Hom_{\ox} ( \caf_i , \cag) $
+	for all \oxmods $ \cag $
+	\end{up}
+	\begin{fact}
+		There is a natural homomorphism $ \caf(U)\otimes\cag(U) \rightarrow \caf\otimes\cag(U) $
+	\end{fact}
+	
+	\begin{prop}
+	Basic Properties:
+	
+	\begin{enumerate}
+		\item $\caf\otimes\cag \cong \cag\otimes\caf$
+		\item $(\caf \otimes \cag)\otimes \ca{H} \cong \caf \otimes(\cag \otimes \ca{H})$
+		\item $\ox \otimes \caf \cong \caf $
+		\item $ (\bigoplus \caf_i) \otimes \cag  \cong \bigoplus (\caf_i \otimes \cag)$
+	\end{enumerate}	
+	\end{prop}
+	
+	\begin{prop}
+		for any homomorphism of \oxmods $ \varphi:\caf \rightarrow \cag $ ,
+		$ ker(\varphi) \, ,  im(\varphi) \, and \, coker(\varphi)$ are \oxmods
+	\end{prop}
+		
+	
+	
+	\subsection{locally free \oxmods}
+	
+	
+	
+	\begin{prop}
+		$ \caf , \cag $ locally free of rank $ r,s $ $ \Rightarrow $ 
+		$ \caf \oplus \cag $ free of rank $ r+s $ and $ \caf \otimes \cag $ free of rank $ r \cdot s $
+	\end{prop}
+	\begin{prop}
+		
+		
+		\begin{enumerate}
+			\item $ \ca{L} $ invertible $ \Rightarrow  \ca{L}^{\vee} \otimes \ca{L} \cong \ox $
+			\item The set of isomorphism classes of invertible sheaves on $ X $ form an abelian group $ Pic(X) $ called the picard group of X
+		\end{enumerate}
+	\end{prop}
+	
+	
+	
+		
+	\subsection{\oxmods on affine schemes}
+	
+	Take $ X= \spec R $ and $ M $ an $ R $-module and $ \ca{B} = \{D_f | f \in R\} $ the basis of the Zariski topology.
+	
+	For all $ f \in R $ set $ \tilde{M}(D_f) := M_f = M\otimes_R R_f $ 
+	
+	and all $ f,g \in R $ with $ D_g \subset D_f \rightsquigarrow R_f \rightarrow R_g $
+	
+	$ \rightsquigarrow \tilde{M}(D_f) = R_f \otimes_R M \rightarrow R_g \otimes_R M = \tilde{M}(D_g) $
+	
+	$ \Rightarrow \tilde{M} $ is a presheaf on $ \ca{B} $
+	
+	\begin{prop}
+		$ \tilde{M} $ is a sheaf and extends uniquely to a sheaf of abelian groups on $ X $.
+		
+		$ R \times M \rightarrow M $ induces a scalar $ \ox \times \tilde{M} \rightarrow \tilde{M}  \Rightarrow \tilde{M}  $ is an \oxmod 
+	\end{prop}
+	
+	\begin{fact}
+		$ \tilde{M}|_{D_f} \cong \tilde{M_f} $ 
+		
+		$ \forall x \in X : (\tilde{M})_x = \varinjlim \tilde{M}(U) = \varinjlim_{f \in R \setminus f } M_f = M_f $
+	\end{fact}
+	
+	Functoriality:
+	
+	Any $ R $-homomorphism $ M \xrightarrow{\varphi} N $ induces $ id \otimes \varphi : R_f \otimes M \rightarrow R_f \otimes N $
+	
+	$ \rightsquigarrow  $ \oxmod homomorphism $ \tilde{\varphi} : \tilde{M} \rightarrow \tilde{N} $
+	
+	$ \Rightarrow  $ Functor $ ((R-mod)) \rightarrow ((\ox -mod)) $
+	
+	
+	\begin{lem}
+		For any \oxmod  $ \cag $ there is a natural isomorphism: 
+		
+		$ \Hom_{\ox}(\tilde{M} , \cag) \xrightarrow{\sim} \Hom_R (M, \cag(X))$
+	
+		$ \psi \mapsto (\psi(X) : \tilde{M}(X)= M \rightarrow \cag(X)) $ is an $ \ox(X) $-module homomorphism i.e. an $ R $-mod hom
+	
+	\end{lem}
+	
+	\begin{prop}
+		The Functor $ M \rightarrow \tilde{M} $ is fully faithful
+	\end{prop}
+	
+	\begin{prop}
+		\begin{enumerate}
+			\item the functor is exact
+			\item commutes with direct sum
+			\item commutes with tensor product, i.e. $ \tilde{M} \otimes_{\ox} \tilde{N}  \cong (M \otimes_R N)^{\sim} $
+		\end{enumerate}
+	\end{prop}
+	
+	\underline{Important:} $ \tilde{M}(X) = M $ so the global sections functor is exact on sheaves of the form $ \tilde{M} $
+	
+	
+ 
+ 	
+	\subsection{Quasicoherent \oxmods}
+	
+	Let $ X $ be an arbitrary scheme.
+	
+	\begin{thm}
+		TFAE:
+		\begin{enumerate}
+			\item For all open affine $ U = \spec R \subset X $ there exists an $ R $-module $ M $ such that $ \caf|_U \cong \tilde{M} $
+			\item There exists an open affine covering of such $ U $
+			\item $ \caf $ is quasicoherent
+			\item for all open affine $ U = \spec R \subset X $ and all $ f \in R $ the homomorphism 
+			
+			$ R_f \otimes_r \caf(U) \xrightarrow{res, mult} \caf(D^U_f) $ is an isomorphism
+		\end{enumerate}
+	\end{thm}
+	
+	\begin{thm}
+		\begin{enumerate}
+			\item For all homomorphisms of quasicoherent \oxmods, ker, im , coker are quasicoherent
+			\item Direct sum of quasicoherent \oxmods are quasicoherent.
+			\item Let $ \caf_i $ be quasicoherent submodules of a quasicoherent \oxmod $ \caf $ then $ \sum \caf_i , \bigcap \caf_i  $ are quasicoherent.
+			\item if $ \caf, \cag $ are quasicoherent  then $ \caf \otimes \cag $ is quasicoherent and for all open affine $ U$ : $\caf(U) \otimes_{\ox(U)} \cag(U) \xrightarrow{\sim} (\caf \otimes \cag)(U) $ is an iso
+		\end{enumerate}
+	\end{thm}
+	
+	\begin{cor}
+		The closed subschemes of $ X $ correspond to the quasicoherent  ideal sheaves of $ \ox $ 
+	\end{cor}
+	
+	\begin{thm}
+		For $ X= \spec R $ we have an equivalence of categories
+		\begin{gather*}
+			((R-mod)) \rightleftarrows ((quasicoherent \ \ox -modules))\\
+			M \longmapsto \tilde{M}\\
+			\caf(x) \longleftarrow \caf
+		\end{gather*}
+	
+	and both functors are exact	
+	\end{thm}
+	
+	
+	
+	
+	
+	\subsection{Coherent sheaves}
+	
+	\begin{prop}
+		For any quasicoherent \oxmod we have the following implications:
+		
+		\begin{enumerate}
+			\item $ \caf $ is coherent
+			
+			$\Downarrow$
+			
+			\item $ \caf $ is finitely generated
+			
+			$ \Updownarrow $
+			
+			\item $ \forall U \subset X $ open affine $ \caf(U) $ is a finitely generated $ \ox(U) $-module
+		\end{enumerate}
+		
+		If $ X $ is locally neotherian all are equivalent.
+	\end{prop}
+	
+	\begin{prop}
+		Assume $ X $ is locally noetherian. Then for all coherent sheaves $ \caf,\cag $ :
+		
+		$ \caf \oplus \cag ,  \quad \caf \otimes_{\ox} \cag , \quad \hhom(\caf,\cag) $ as well as ker, im and coker of any homomorphism are coherent.
+	\end{prop}
+	
+	
+	
+	
+	\subsection{Functoriality}
+	
+	Consider a morphism $ f:X \longrightarrow Y $  and sheaves $ \caf, \cag $ on $ X $ and $ Y $ respectively.
+	
+	\begin{prop}
+		If $ f $ is affine \footnote{f is affine if the inverse image of every open affine is open affine} and $ \caf $ is quasicoherent then $ f_*\caf $ is quasicoherent.
+	\end{prop}
+	
+	\begin{prop}
+		If $ f $ is finite , $ X,Y $ are locally noetherian and $ \caf $ is coherent then $ f_*\caf $ is coherent.
+	\end{prop}
+	
+	\begin{prop}
+		$ f_* $ naturally extends to a functor which commutes with products and is left exact.
+	\end{prop}
+	
+	\begin{prop}
+		There exists a natural isomorphism $ (f^*\cag)_x \cong \oxx \otimes_{\ca{O}_{Y,f(x)}} \cag_{f(x)} $
+	\end{prop}
+	
+	\begin{prop}
+		$ f^* $ naturally extends to a functor which commutes with $ \oplus $ and is right exact and satisfies:
+		\[ f^*(\cag \otimes_{\oy} \ca{H}) \cong (f^*\cag) \otimes_{\ox} (f^*\ca{H}) \]
+	\end{prop}
+	
+	\begin{prop}
+		If $ X = \spec R $ and $ Y = \spec S $ and $ \cag = \tilde{N} $ on $ Y $ then $ f^*\cag \cong (R \otimes_S N)^{\sim} $
+	\end{prop}
+	
+	\begin{prop}
+		If $ \cag $ is 
+		\begin{itemize}
+			\item quasicoherent
+			\item finitely generated
+			\item free
+			\item locally free
+			\item coherent (if $ X,Y $ are locally noetherian)
+		\end{itemize}
+		then so is $ f^*\cag $
+	\end{prop}
+	
+	\begin{prop}
+		Adjunction:
+		\[ \Hom_{\ox}(f^*\cag, \caf) \cong \Hom_{\oy} (\cag , f_*\caf) \]
+		this is functorial in $ \caf $ and $ \cag $.
+	\end{prop}
+	
+	
+	\subsection{\oxmods on a projective scheme}
+	
+	Take $ X = \proj R $ for a graded ring $ R = \oplus_{d\geq 0} R_d $ 
+	
+	\begin{prop}
+		There exists a functor
+		\[ ((graded \: R-mod)) \longrightarrow ((quasicoherent \: \ox - module)) \]
+		\[ M \longrightarrow \tilde{M} \]
+		this functor is exact and commutes with $ \bigoplus $ and $ \bigotimes $ 
+	\end{prop}
+	
+	\begin{prop}
+		
+		\begin{enumerate}
+			\item $ \ox(n) $ is an invertible sheaf
+			\item $ \tilde{M(n)} \cong \tilde{M} \otimes_{\ox} \ox(n) $
+		\end{enumerate}
+		
+	\end{prop}
+	
+	\begin{cor}
+		$ \forall m,n \in \mathbb{Z} \: : \: \ox(m+n) \cong \ox(m) \otimes_{\ox} \ox(n) $
+		
+		$ \Rightarrow \quad \ox(n) \cong \ox(1)^{\otimes n}  $ for all $ n\geq 1 $
+		
+		$ \ox(-1) \cong \ox(1)^{\vee} $
+	\end{cor}
+	
+	\begin{lem}
+		Let $ \caf $ be a quasicoherent \oxmod and $ f \in \caf(X) $
+		
+		\begin{enumerate}
+			\item If $ X $ is quasicompact and $ f|_{D_f} = 0 $ there exists an $ n \geq 0 $ such that $ f \otimes s^n = 0 $  in  $ (\caf \otimes \ca{L}^{\otimes n} )(X) $
+			\item If $ X $ is quasicompact and separated for any $ g \in \caf (D_s) $ there exists $ n_0 $ such that $ \forall n \geq n_0 \qquad g \otimes s^n|_{D_s} \in (\caf \otimes \ca{L}^n)(D_s) $ extends to an element of $ (\caf \otimes \ca{L}^n) (X) $		
+		\end{enumerate}
+		
+		(if $ X = \spec R \: \ca{L} = \ox , \: \caf = \tilde{M} $ )
+		
+		\begin{enumerate}
+			\item $ f= m \in M $ if $ \frac{m}{1} = 0 $ in $ M_s $ then $ \exists n \quad m\cdot s^n =0 \in M $
+			\item Take $ n \in M_s $ write $ n = \frac{m}{s^{n_0}} $ 
+		\end{enumerate}
+		
+	\end{lem}
+	
+	\begin{thm}
+		For any finitely generated quasicoherent sheaf $ \caf $ on $ X $:
+		
+		\begin{enumerate}
+			\item $ \exists n_0 \: \forall n \geq n_0 \quad \caf(n)$ is generated by global sections.
+			\item $ \exists m \: \exists r \geq 0 \: \exists $ surjective homomorphism $ \ox(m)^{\oplus r} \twoheadrightarrow \caf $
+		\end{enumerate}
+	\end{thm}
+	
+	\underline{Construction:}
+	
+	\begin{enumerate}
+		\item for a graded $ R $-module $ M $ and $ n \in \mathbb{Z} $ there exists a natural map 
+		
+		$ M_n \longrightarrow \tilde{M}(n)(X) = \widetilde {M(n)}(X) $
+		
+		this map is $ R_0 $-linear
+		\item this is multiplicative
+		\item Set $ R' = \bigoplus_{d \geq 0} \ox(d)(X) $. it is a graded ring with a graded ring homomorphism $  R \rightarrow R' $ and a graded $ R $-module homomorphism $ M \rightarrow M'= \bigoplus_{n\in \mathbb{Z}} \widetilde{M}(n)(X) $
+		\item for any \oxmod $ \caf $ and any $ n_0 \in \mathbb{Z} \cup \{ -\infty \} $ 
+		
+		set: $ M' := \bigoplus_{n \geq n_0} \caf(n)(X) $
+		
+		This is naturally a graded $ R' $-module; hence a graded $ R $-module
+	\end{enumerate}
+	
+	
+	\begin{thm}
+		For any quasicoherent \oxmod $ \caf $  there is a natural isomorphism 
+		
+		$ \widetilde{M'} \longrightarrow \caf \quad $ for $ M' $ as in (4.) 
+		
+		If $ \caf = \widetilde{M} $ this is the inverse to the homomorphism 
+		
+		$ \widetilde{M} \longrightarrow \widetilde{M'} \quad $ induced by (3.)
+		
+	\end{thm}
+	
+	
+	\begin{cor}
+		Every quasicoherent \oxmod on $ \proj R $ is isomorphic to $ \widetilde{M} $  for some graded $ R $-module $ M $
+	\end{cor}
+	
+	
+	
+	\subsection{Morphisms to projective spaces}
+	
+	\begin{prop}
+		For all schemes and all $ n \geq 0 $ there is a natural bijection:
+		
+		\[ \mor(X, \mathbb{P}^n) \cong \{ (\ca{L},l_0,\dots,l_n) \: | \: \ca{L} \text{invertible sheaf on $ X $. $ l_0,\dots , l_n \in \ca{L}(X) $ generate } \ca{L} \} \]
+		
+		\[ \cong \text{ isos of } \ca{L} \xrightarrow{\sim} \ca{L'} \text{ mapping } l_i \mapsto l_i' \]
+		
+	\end{prop}
+	
+	\begin{prop}
+		
+		Let $ (\ca{L}, l_0, \dots , l_n) $ be as above and let $ l_{n+1} , \dots l_m \in \ca{L}(X)$
+		then we have the following commutative diagram:
+		
+		\begin{tikzcd}
+			X \ar[r , "(\ca{L}  l_0 \dots l_n)"] \ar[dr, "(\ca{L} l_0 l_m)"'] & \mathbb{P}^n \ar[d, leftarrow,   "proj"]\\
+			{} & \bigcup^n_{i=0} \overline{D}_{X_i}^{p^m} \subset \mathbb{P}^m\\
+		\end{tikzcd}
+		
+		
+	\end{prop}
+	
+	Now let $ X $ be a scheme over $ \spec R $
+	
+	\begin{prop}
+		For $ X $ noetherian we have for all very ample sheaves $ \ca{L} $ and all invertible sheaves $ \ca{L'} $ on $ X $ that is generated by global sections:  $ \ca{L} \otimes \ca{L'} $ is very ample.
+	\end{prop}
+	
+	\begin{note}
+		very ample $ \Rightarrow $ generated by global sections
+	\end{note}
+	
+	\begin{cor}
+		For $ \ca{L}, \ca{L'} $ very ample $ \Rightarrow \quad \ca{L} \otimes \ca{L'} $ and $ \ca{L}^{\otimes n} \quad \forall n \geq 1 $ are very ample 
+	\end{cor}
+	
+	\begin{prop}
+		TFAE:
+		
+		\begin{enumerate}
+			\item $ \ca{L} $ ample
+			\item $ \forall m \geq 1 \: : \: \ca{L}^{\otimes m} $ ample
+			\item $ \exists m\geq 1 \: : \: \ca{L}^{\otimes m} $ ample
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{prop}
+		very ample $ \Rightarrow $ ample
+	\end{prop}
+	
+	\begin{thm}
+		If $ X $ is separated of finite type over $ \spec R $ then:
+		
+		$ \ca{L} $ ample $ \Rightarrow $  $ \exists m \geq 1 \: : \: \ca{L}^{\otimes m} $ very ample
+	\end{thm}
+	
+	\begin{cor}
+		same assumptions $ \Rightarrow $ TFAE:
+		
+		\begin{enumerate}
+			\item $ \ca{L} $ ample
+			\item $ \exists m \geq 1 \: :\: \ca{L}^{\otimes m} $ very ample
+			\item $ \exists m_0 \: \forall m \geq m_0 \: : \: \ca{L}^{\otimes m} $ very ample
+		\end{enumerate}
+	\end{cor}
+	
+	\begin{note}
+		very ample is a relative notion for $ X $ over $ \spec R $. Ample is an absolute notion
+		
+		want: true relative notions for $ X $ over arbitrary scheme $ S $
+	\end{note}
+	
+	\begin{prop}
+		If $ X \rightarrow Y $ is separated of finite type with $ Y $ noetherian, TFAE:
+		
+		\begin{enumerate}
+			\item $ \cl  $ is relatively ample over $ Y $
+			\item $ \exists m \geq 1 \: : \: \cl^{\otimes m} $ is relatively ample over $ Y $
+			\item $ \exists m_0 \: :\: \forall m \geq m_0 \: : \: \cl^{\otimes m} $ is relatively very ample over $ Y $
+		\end{enumerate}
+				
+	\end{prop}
+	
+	\begin{prop}
+		 let the following diagram be cartesian:
+		 
+		 \begin{tikzcd}
+		 	X' \ar[r, "f'"]\ar[d, "g'"'] \ar[dr, phantom , "\Box"  ] & Y' \ar[d, "g"] \\
+		 	X \ar[r, "f"] & Y \\
+		 \end{tikzcd}
+		 
+		 with all schemes noetherian and f separated of finite type $ \cl $ invertible on $ X $ which is relatively \{ample/ very ample\} over $ Y $
+		 then $ g'^*\cl $ is as well over $ Y' $ 
+		 
+	\end{prop}
+	
+	\begin{lem}
+		Take morphisms $ X \xrightarrow{f} Y \xrightarrow{g} Z = \spec R $ which are separated of finite type with $ R $ noetherian. Let $ \cl $ be an invertible sheaf on $ X $ which is relatively very ample over $ Y $ and let $ \ca{M} $ be an invertible sheaf on $ Y $ which is very ample.
+		
+		Then: $ \exists l_0 \: \forall l \geq l_0 $ :
+		\begin{enumerate}
+			\item $ \cl \otimes f^*\ca{M}^{\otimes l} \cong \varepsilon ^*\mathrm{pr_1}^* \ca{O}(1) $ for some locally closed embedding $ \varepsilon: X \hookrightarrow \bbp^N\times Y $
+			\item $ \cl \otimes f^* \ca{M}^{\otimes (l+1)} $ is very ample for $ X $ over $ S $.
+		\end{enumerate}
+	\end{lem}
+	
+	\begin{prop}
+		Let $ f:X\rightarrow Y $ be a quasicompact morphism and $ \cl $ an invertible sheaf on $ X $
+		Let $ f $ be separated of finite type with $ Y $ noetherian then relatively \{ample / very ample\} is equivalent to saying for all open coverings fulfill the respective ampleness property.
+		
+	\end{prop}
+	
+	\begin{prop}
+		Take $ X \xrightarrow{f} Y \xrightarrow{g} Z $ separated of finite type with $ Z $ noetherian, $ \cl $ an invertible sheaf on X relatively \{ample / very ample\} over $ Y $ and $ \ca{M} $ ditto over $ Z $
+		
+		Then $ \exists l_0 \: \forall l > l_0 \: : \: \cl \otimes f^* \ca{M}^{\otimes l}  $ is ditto over $ Z $
+	\end{prop}
+	
+	\begin{prop}
+		$ X \xrightarrow{f} Y \xrightarrow{g} Z $ both \{projective/ quasiprojective\} with $ Z $ noetherian. Then $ g \circ f $ ditto.
+	\end{prop}
+	
+		
+	
+	
+	
+	
+	\subsection{Divisors}
+	
+	
+	\begin{prop}
+		$ \ox(D) $ is an invertible sheaf and every invertible sheaf, which is a subsheaf of $ \ca{K}_X $, arises like this from a unique cartier divisor.
+	\end{prop}
+	
+	\begin{prop}
+		\begin{enumerate}
+			\item $ \forall D,D' \: : \: \ox(D+D') \cong  \ox(D) \otimes\ox(D') $
+			\item $ \forall D \: :\: \ox(-D) \cong \ox(D)^{\vee}  $
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{thm}
+		The map $ D \longmapsto \ox(S) $ induces an isomorphism
+		\[ Div\, Cl (X) \longrightarrow Pic (X) \]
+	\end{thm}
+	
+	\begin{prop}
+		$ X $ regular $ \implies $ locally factorial
+	\end{prop}
+	
+	
+	Now assume $ X $ is noetherian integral and locally factorial
+	
+	\begin{prop}
+		For any Cartier divisor $ D = ([f_x])_{x\in X} $ on $ X $ the sum $ cyc(D) :=  \underset{\substack{y \in X \\ \dim \ca{O}_{X,y} = 1 }}{\sum} \mathrm{ord}_y (f_y)\cdot \overline{ \{ y \} }^{red} $ is finite, so is $ \mathrm{Z}^1(X) $.
+	\end{prop}
+	
+	\begin{thm}
+		there is a group isomorphism
+		$ Div(X) \rightarrow \mathrm{Z}^1(X) \quad D \mapsto cyc(D) $
+	\end{thm}
+	
+	\begin{prop}
+		For any field k, $ \mathrm{Cl}(\mathbb{A}^n_k) = 0 \: \implies \mathrm{Pic}(\mathbb{A}^n_k) = 0 \: \forall n \geq 0 $
+	\end{prop}
+	
+	\begin{thm}
+		For any field $ k $ and any $  n \geq 1 $
+		
+		\[ Cl(\mathbb{P}^n_k) \cong Pic(\mathbb{P}^n_k) \cong \mathbb{Z} \]
+		
+		generated by $ [H] \longleftrightarrow [\ox(1)] $
+	\end{thm}
+	
+	\begin{prop}
+		$ D $ is equivalent to an effective divisor iff $ \Gamma(X, \ox(D)) \neq 0 $
+	\end{prop}
+	
+	\begin{prop}
+		If $ X $ possesses a very ample divisor, every divisor is a difference of very ample divisors. 
+	\end{prop}
+	
+	\begin{prop}
+		$ \varphi^*: Div(Y) \rightarrow Div(X) \quad ([f_y])_y \mapsto ([\varphi^{\flat}f_{\varphi(x)}])_{x \in X} $
+		
+		is a well defined homomorphism and $ \varphi^* \oy(D) \cong \ox(\varphi ^* D) $
+	\end{prop}
+	
+	\begin{prop}
+		If $ D $is the effective divisor corresponding to the locally principal closed subscheme $ T \subset Y $ then $ \varphi^* D $ corresponds to $  \varphi^{-1} (T) := X\times_Y T$
+	\end{prop}
+	
+	
+	
+	\subsection{Differentials}
+	
+	\begin{fact}
+		$ \mathrm{Der}_A(B,M) $ is a $ B $-module by the action of $ B $ on $ M $.
+	\end{fact}
+	
+	\begin{fact}
+		Any $ B $-module homomorphism $ f:M \rightarrow N $ induces a $ B $-module homomorphism $ \mathrm{Der}_A(B,M) \rightarrow \mathrm{Der}_A(B,N) \; d \mapsto f \circ d $.
+	\end{fact}
+	
+	\begin{fact}
+		There is a natural bijection
+		
+		 $ \mathrm{Der}_A(B,M) \cong \{ \varphi : B \rightarrow B \ltimes M \: A\text{-algebra homos with } \pi \circ \varphi = \id_B \}  \quad d \leftrightarrow (\id , d) $
+	\end{fact}
+	
+	\begin{prop}
+		$ (\Omega_{B/A}, d ) $ is unique up to unique isomorphism.
+	\end{prop}
+	
+	\begin{prop}
+		$ I/I^2 $ with $ d $  is a module of differentials of $ B $ over $ A $.
+	\end{prop}
+	
+	\begin{prop}
+		$ \Omega_{A[X_1, \dots , X_n]/A} $ is a free $ A[X_1, \dots , X_n] $ module with basis $ d X_1 , \dots , d X_n $
+	\end{prop}
+	
+	\begin{fact}
+		$ \Omega_{A/A} = 0 $
+	\end{fact}
+	
+	\begin{prop}
+		If $ B' = B\otimes_A A' $ then $ B' \otimes_B \Omega_{B/A} \xrightarrow{\sim} \Omega_{B'/A'} $
+	\end{prop}
+	
+	\begin{prop}
+		For any multiplicative system $ S \subset B $ : $ S^{-1} \Omega_{B/A} \cong \Omega_{S^{-1}B/A} $.
+	\end{prop}
+	
+	\begin{prop}
+		For any ring homomorphisms $ A \rightarrow B \rightarrow C $ there exists a natural exact sequence $ C \otimes_B \Omega_{B/A} \rightarrow \Omega_{C/A} \rightarrow \Omega_{C/B} \rightarrow 0 $
+	\end{prop}
+	
+	\begin{prop}
+		For all ideals $ J \subset B $ set $ C := B/J  \; \Rightarrow $ there is a natural exact sequence $ J/J^2 \rightarrow C \otimes_B \Omega_{B/A} \rightarrow \Omega_{C/A} \rightarrow 0 $
+	\end{prop}
+	
+	\begin{cor}
+		If $ B $ is a finitely generated $ A $-algebra, then $ \Omega_{B/A}  $ is a finitely generated $ B $-module.
+	\end{cor}
+	
+	\begin{prop}
+		$ L/K $ finite field extension $ \Omega_{L/K} = 0 \Leftrightarrow  $ separable.
+	\end{prop}
+	
+	\begin{prop}
+		For any local $ k $- algebra $ B $ with $ B/\ca{m} \cong k $ there exists a natural isomorphism $ \ca{m}/\ca{m}^2 \rightarrow (B/\ca{m}) \otimes_B \Omega_{B/k} $
+	\end{prop}
+	
+	\begin{thm}
+		Let $ B = k \oplus \mathfrak{m} $ local ring, $ k $ perfect, $ B $ is a localization of a finitely generated $ k $-algebra.
+		
+		Then $ \Omega_{B/k} $ is a free $ B $-module of finite rank $ dim(B) $ iff $ B  $ is a regular local ring.
+	\end{thm}
+	
+	\begin{prop}
+		$ Y \rightarrow X $ locally of finite type $ \Rightarrow \; \Omega_{Y/X} $ finitely generated.
+	\end{prop}
+	
+	\begin{prop}
+		\begin{tikzcd}
+			Y \ar[r] \ar[d, phantom, "\cup"] & X \ar[d, phantom, "\cup"] \\
+			V \ar[r] &  U \\
+		\end{tikzcd} open $ \Rightarrow \; \Omega_{V/U} = \Omega_{Y/X}|_{V} $
+	\end{prop}
+	
+	\begin{prop}
+		\begin{tikzcd}
+			Y \ar[r, "f"] \ar[d, "g'" , leftarrow] \ar[dr, phantom, "\Box"] & X \ar[d, leftarrow] \\
+			Y' \ar[r] & X'
+		\end{tikzcd}	$ \Rightarrow \; \Omega_{Y'/X'} \cong g'^*\Omega_{Y/X} $
+	\end{prop}
+		
+	\begin{prop}
+		$ Z \xrightarrow{g} Y \xrightarrow{f} X  \quad \Rightarrow \; $ exact sequence:	 $ g^* \Omega_{Y/X} \rightarrow \Omega_{Z/X} \rightarrow \Omega_{Z/Y} \rightarrow 0 $	
+	\end{prop}
+			
+	\begin{prop}
+		If $ Z \overset{i}{\hookrightarrow} Y $ is a closed embedding with  sheaf of ideals $ J $ $ \Rightarrow $ exact sequence $ J/J^2 \rightarrow i^* \Omega_{Y/X} \rightarrow \Omega_{Z/X} \rightarrow 0 $
+	\end{prop}
+				
+	\begin{prop}
+		$ Y = Y_1 \times_X Y_2 \; \Rightarrow $ $ \Omega_{Y/X} \cong \mathrm{pr}_1^* \Omega_{Y_1/X} \oplus \mathrm{pr}_2^* \Omega_{Y_2/ x} $
+	\end{prop}
+					
+	\begin{thm}
+		There is a natural short exact sequence for $ X:= \mathbb{P}^n_Y $:
+		\[ 0 \rightarrow \Omega_{X/Y} \rightarrow \ox(-1)^{n+1} \rightarrow \ox \rightarrow 0 \]
+	\end{thm}
+		
+	\begin{thm}
+		Any localization of  a regular local ring at a prime ideal is regular.
+	\end{thm}
+	
+	\begin{thm}
+		Let $ X $ be connected of finite type over an algebraically closed field $ k $. Then $ X $ is regular iff $ \Omega_{X/k } $  is locally free of rank $ dim(X) $
+	\end{thm}
+	
+	\begin{cor}
+		$ X $ reduced of finite type over $ k $ algebraically closed  $ \Rightarrow $ there is an open dense subscheme $ U \subset X $ which is regular
+	\end{cor}
+	
+	\begin{thm}
+		Let $ X $ be regular of finite type over $ k $ algebraically closed. Let $ Y \subset X $ be the closed subscheme associated to $ J \subset \ox  $
+		
+		Then $ Y $ is regular iff $ \Omega_{Y/k} $ is locally free and the second sequence 
+		\[ 0 \rightarrow J/J^2 \rightarrow i^* \ca{O}_{X/k} \rightarrow \Omega_{Y/k} \rightarrow 0 \]
+		is also leftexact.
+		
+		Then $ J $ is locally generated by $ codim(Y)=: r $ elements and $ J/J^2 $ is locally free of rank $ r $
+	\end{thm}
+	
+	\begin{prop}
+		$ 0 \rightarrow \caf ' \rightarrow \caf \rightarrow \caf '' \rightarrow 0 $ short exact sequence of locally free sheaves of rank $ n',n,n'' $.
+		
+		There is a natural isomorphism $ \bigwedge^n \caf \cong \bigwedge ^{n'} \caf ' \cong \bigwedge ^{n''} \caf $
+	\end{prop}
+	
+	\begin{lem}
+		$ 0 \rightarrow \caf ' \rightarrow \caf \rightarrow \caf '' \rightarrow 0 $ short exact sequence of locally free sheaves $ \Rightarrow $ 
+		
+		There is a natural isomorphism $ \bigwedge ^{top} \caf \cong \bigwedge^{top} \caf ' \otimes \bigwedge^{top} \caf '' $
+	\end{lem}
+	
+	\begin{cor}
+		$ i^* \omega_{X/Y} \cong i^* \bigwedge^{top} (J/J^2) \otimes \omega_{Y/k} $
+	\end{cor}
+	
+	\begin{prop}
+		For any nonsingular closed hypersurface $ Y \subset \bbp^n_k  $ for $ k $ algebraically closed of degree $ d $ i.e. $ Y = V(f) $ for $ f \neq 0 $ homogeneous of degree $ d $ 
+		
+		Then $ \omega_{Y/k} \cong i^* \ca{O}(-n-1+d) $
+	\end{prop}
+	
+	\begin{cor}
+		$ \omega_{Y/k} \cong \oy $ iff $ d = n+1 $
+	\end{cor}
+	
+	\begin{prop}
+		Let $ Y \subset \bbp^2_k $ be a nonsingular closed curve of degree $ d $ with $ k $ algebraically closed. Then:
+		\begin{enumerate}
+			\item $ \deg \omega_{Y/k} = d(d-3) $
+			\item $ \omega_{Y/k} $ is ample iff $ d \geq 4 $
+			\item $ Y \cong \bbp^1_k $ iff $ d \le 2 $
+		\end{enumerate}
+	\end{prop}
+	
+	
+	
+	
 	
 	\section{Cohomology}
 	
+	
+	\subsection{Some (quick) homological algebra}
+	
+	\begin{fact}
+		Any homomorphism $ f:X \rightarrow Y $ induces a homomorphism in homology:
+		
+		$ H^n(f): H^n(X) \rightarrow H^n(Y) $
+	\end{fact}
+	
+	\begin{prop}
+		$ 0 \rightarrow X^{\bullet} \xrightarrow{f} Y^{\bullet} \xrightarrow{g} Z^{\bullet} \rightarrow 0 $ short exact sequence of complexes $ \Rightarrow $ exists natural homomorphisms $ \delta_n $ yielding a long exact sequence in cohomology:
+		\[ \dots \xrightarrow{\delta_{n-1}} H^nX \xrightarrow{H^nf} H^nY \xrightarrow{H^ng} H^nZ \xrightarrow{\delta_n} H^{n+1}X \rightarrow \dots  \]
+	\end{prop}
+	
+	\begin{prop}
+		$ f,g $ homotopic $ \implies \; \forall n \: : \: H^nf = H^ng $
+	\end{prop}
+	
+	
+	
+	
+	
+	\subsection{Cech cohomology}
+	
+	\begin{prop}
+		The projection $ C^{\bullet}_{alt}(\ca{U},\caf) \rightarrow C^{\bullet}_{ord} (\ca{U}, \caf) $ is an isomorphism of complexes.
+	\end{prop}
+	
+	\begin{prop}
+		The inclusion $ C^{\bullet}_{alt}(\ca{U}, \caf) \overset{\varepsilon}{\hookrightarrow} C^{\bullet} (\ca{U}, \caf) $ is a quasiisomorphism.
+	\end{prop}
+	
+	\begin{cor}
+		\[ H^n(\ca{U},\caf) \overset{\sim}{\underset{H^n\varepsilon}{\longleftarrow}}  H^n(C^{\bullet}_{alt}( \ca{U}, \caf)) \overset{\sim}{\underset{H^n\pi}{\longrightarrow}} H^n (C^{\bullet}_{ord}(\ca{U}, \caf)) \]
+	\end{cor}
+	
+	\begin{prop}
+		$ H^n(\sigma^*) $ is independent of $ \sigma^* $
+	\end{prop}
+	
+	\begin{prop}
+		If $ \ca{U} $ and $ \ca{V} $ are refinements of each other then $ H^n(\sigma^*) $ is an isomorphism.
+	\end{prop}
+	
+	
+	\begin{prop}
+		Any homomorphism of sheaves of abelian groups $ \varphi: \caf \rightarrow \cag $ induces a natural homomorphism in cohomology $ H^n\varphi : H^n(X,\caf) \rightarrow H^n(x, \cag) $
+	\end{prop}
+		
+	Now let $ \caf $ be a quasicoherent sheaf on a scheme $ X $
+	
+	\begin{thm}
+		For $ X $ affine $  \Rightarrow $ $ H^n(X, \caf) = 0 $ for all $ n > 0 $
+	\end{thm}
+	
+	\begin{prop}
+		For any closed embedding $ i: Y \hookrightarrow X $ and any \oxmod $ \caf $ and any $ p: H^p(Y,\caf) \cong H^p(X, i_{*} \caf) $
+	\end{prop}
+		
+	\begin{thm}
+		$ X $ projective over $ \spec A $ with $ A $ noetherian, $ \ca{L} $ very ample invertible sheaf on $ X $ , $ \caf $ coherent sheaf on $ X $
+		
+		\begin{enumerate}
+			\item $ \forall \: : \: H^p(X,\caf) $ is a finitely generated $ A $-module
+			\item $ \exists m_0 \: \forall m \geq m_0 \: \forall p > 0 \: : \: H^p(X, \caf \otimes \ca{L}^{\otimes m}) = 0 $
+		\end{enumerate}
+	\end{thm}
+	
+	\begin{thm}
+		Let $ \caf $ be a quasicoherent sheaf on a separated scheme $ X $. Then for any affine open covering $ \ca{U} $ of $ X $:
+		\[ H^p(\ca{U}, \caf) \xrightarrow{\sim} H^p(X,\caf) \]
+	\end{thm}
+	
+	\begin{thm}
+		Let X be separated which posesses an open covering by $ d+1 $ open affines.
+		Then $ \forall p > d \: \forall \caf $ quasicoherent on $ X \: : \: H^p(X,\caf ) =0 $ 
+	\end{thm}
+	
+	\begin{prop}
+		$ X $ quasiprojective of dimension $ d$ over $ k $ $ \Rightarrow $ $ X $ can be covered by $ d +1 $ open affines.
+	\end{prop}
+	
+	\begin{cor}
+		$ X $ quasiprojective over $ k $, $ \caf $ quasicoherent $ \Rightarrow $ $ \forall p > \dim(X) \: :\: H^p(X,\caf)=0 $
+	\end{cor}
+	
+	\begin{prop}
+		$ X $ separated $ 0 \rightarrow \caf' \xrightarrow{\varepsilon} \caf \xrightarrow{\pi} \caf'' \rightarrow 0 $ short exact sequence of quasicoherent sheaves $ \Rightarrow $ $ \exists $ natural long exact sequence in cohomology
+		\begin{multline*}
+ 0 \rightarrow \caf'(X) \rightarrow \caf(X) \rightarrow\caf''(X) \rightarrow H^1(X, \caf') \rightarrow \dots \\ \dots \rightarrow H^p(X,\caf') \xrightarrow{H^p\varepsilon} H^p(X, \caf) \xrightarrow{H^p\pi} H^p(X,\caf'') \rightarrow H^{p+1}(X,\caf') 
+		\end{multline*}
+	\end{prop}
+		
+	\begin{thm}
+		For $ X $ separated and quasicoherent: TFAE:
+		
+		\begin{enumerate}
+			\item $ X $ is affine
+			\item $  \forall \caf  $ quasicoherent on $ X $ : $ \forall p> 0 \: : \: H^p(X, \caf ) =0  $
+			\item dito for $ p=1 $
+		\end{enumerate}
+	\end{thm}
+	
+	
+	
+	
+	
+	\subsection{Cohomology of projective space}
+		
+	\begin{thm}
+		\[ 
+		H^p(\mathbb{P}^n_A, \ca{O}_{\mathbb{P}^n_A}(m)) =
+		\begin{cases}
+		\underset{ \substack{ \underline{d} \in \mathbb{Z}^{n+1} \\ \text{ all } d_i \geq 0 } }{\bigoplus} A\cdot\underline{X}^{\underline{d}} = A[\underline{X}]_m & \text{if } p= 0 \\
+		
+		\underset{\substack{  \underline{d} \in \mathbb{Z}^{d+1} \\ \sum d_i = m \\ \text{all } d_i < 0  }}{\bigoplus}  A \cdot \underline{X}^{\underline{d}} & \text{if } p = n \\
+		
+		0 & \text{else}
+		
+		\end{cases}
+		\]
+	\end{thm}
+	
+	\begin{thm}
+		Let $ X $ be proper over $ \spec A $ for $ A $ noetherian and $ \ca{L} $ an invertible sheaf on $ X $. Then
+		
+		TFAE:
+		
+		\begin{enumerate}
+			\item $ \ca{L} $ is ample
+			\item $ \forall \text{ coherent } \caf \exists m_0 \: \forall m \geq m_0 \: \forall p\geq 1 \: : \: H^p(X, \caf \ca{L}^m) =0 $
+			\item $ \forall \text{ coherent sheaves of ideals } J \subset \ox \: \exists m_0 \: \forall m \geq m_0 \: :\: H^1 (X, J(m)) =0  $
+		\end{enumerate}
+	\end{thm}
+	
+	
+	
+	
+	
+	\subsection{Higher direct images}
+	
+	Take $ f:X \rightarrow Y $ and sheaves of modules $ \caf $ on $ X $ and $ \cag $ on $ Y $
+	
+	\begin{fact}
+		\begin{enumerate}
+			\item There is a natural homo : $ H^p(Y,f_* \caf) \rightarrow H^p(X,\caf) $
+			\item There is a natural homo
+		
+			\begin{tikzcd}
+				H^p(Y,\cag) \ar[rr] \ar[dr, "H^p(adj)"] && H^p(X,f^*\cag) \ar[dl, leftarrow , "(1.)" ] \\
+				& H^p (Y, f_* f^* \cag)&\\
+			\end{tikzcd}
+			\item Both are compatible with composition and functorial in $ \caf, \cag $
+		\end{enumerate}
+	\end{fact}
+	
+	\begin{prop}
+		$ f $ separated, quasicompact, $ \caf $ quasicoherent $ \Rightarrow $ each $ \R^p f_* \caf  $ is quasicoherent and for all open affine $ V \subset Y $ : 
+		\[ (\R ^p f_* \caf) (V) = H^p(f^{-1}(V), \caf|_{f^{-1}(V)}) \]
+	\end{prop}
+		
+	\begin{thm}[Direct Image Theorem]
+		Let $ f $ separated, $ Y $ locally noetherian, $ \caf $ coherent $ \Rightarrow \: \forall p \: : \: \R^pf_* \caf $ is coherent.   
+	\end{thm}
+	
+	\begin{fact}
+		$ f $ affine, $ \caf $ quasicoherent $ \Rightarrow \: \forall p> 0 \: : \: \R^pf_*\caf =0 $
+	\end{fact}
+	
+	\begin{prop}
+		For $ X \xrightarrow{f} Y \xrightarrow{g} Z $ there is a relation between $ \R^pg_* \R^pf_* \caf  $ and $ \R^r (g \circ f)_* \caf $ (spectral sequences)
+	\end{prop}
+	
+	
+	
+	
+	
+	
+	\subsection{Duality}
+	
+	\begin{prop}
+		For $ X = \bbp^n_A $ and all $ m \in \bbz $ the map 
+		\[ H^0(X;\ox(m)) \otimes H^n(X, \ox(-n-1-m)) \longrightarrow H^n(X, \ox(-n-1)) \cong A \]
+		is a perfect pairing.
+	\end{prop}
+	
+	\begin{fact}
+		The isomorphism $ H^n(\bbp^n_A , \ca{O}(-n-1)) \cong A $ is not canonical but after $ \ca{O}(-n-1) \cong \omega_{\bbp^n_A /A} $ the isomorphism 
+		\[ H^n(\bbp^n_A, \omega_{\bbp^n_A/A}) \cong A \]
+		is 
+	\end{fact}
+	
+	\begin{prop}
+		If an $ r $-dualizing sheaf $ (\omega_f , \mathrm{tr}_f) $ exists it is unique up to unique isomorphism.
+	\end{prop}
+	
+	\begin{thm}
+		$ Y $ locally noetherian $ \implies $ $ (\omega_{\mathbb{P}^n_Y/Y , \mathrm{tr}_f}) $ is an $ n $-dualizing sheaf for $ f:\bbp^n_Y \longrightarrow Y $
+	\end{thm}
+	
+	\begin{thm}
+		For any projective morphism $ f:X \rightarrow Y $ with $ Y $ locally noetherian and all fibers of $ \dim \le r $ the $ r $-dualizing sheaf for $ f $ exists.
+	\end{thm}
+	
+	\begin{thm}
+		$ f:X \rightarrow Y $ projective smooth of relative dimension $ r $ , $ Y $ locally noetherian $ \implies \: \omega_f := \omega_{X/Y} := \Lambda^r\Omega_{X/Y} $ together with some $ \mathrm{tr}_f $ is an $ r $-dualizing sheaf. 
+	\end{thm}
+	
+	
+	
+	
+	
+	
+	\subsection{Flat base change}
+	
+	\begin{prop}
+		$ \widetilde{M}  $ on $ \spec A $ is flat iff $ M $ is flat over $ A $.
+	\end{prop}
+	
+	\begin{prop}
+		\begin{enumerate}
+			\item $ \caf $ locally free $ \Rightarrow $ $ \caf $ flat
+			\item $ \caf $ finitely generated , $ X $ locally noetherian
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{prop}
+		$ f: \spec B \rightarrow \spec A $ is flat iff $ B $ is a flat $ A $-module.
+	\end{prop}
+	
+	\begin{prop}
+		\begin{tikzcd}
+			X' \ar[r, "g'"] \ar[d, "f'"] \ar[dr, phantom, "\Box"] & X \ar[d, "f"]\\
+			Y' \ar[r, "g"] & Y
+		\end{tikzcd}
+		For a cartesian diagramm with $ f $ separated and quasicompact and $ \caf $ quasicoherent and $ g $ flat then base change is an isomorphism.
+	\end{prop}
+	
+	\begin{prop}
+		$ f:X \rightarrow Y $ projective all fibers of dimension $ \leq d $; $ \caf $ quasicoherent $ \Rightarrow $
+		\begin{enumerate}
+			\item $ \forall p> d \: : \: \R^p f_* \caf = 0 $
+			\item $ \R^df_* $ is rightexact and commutes with base change
+		\end{enumerate}
+	\end{prop}
+	
+	
+	
 
 	\section{Riemann-Roch and Serre duality}
+	
 
-
-        \subsection{Divisors on curves}
+    \subsection{Divisors on curves}
 
         Let $X$ be regular integral projective scheme of dim 1 over a field $k$\\
 
-        \begin{theorem}
-          If $D$ is the effective divisor associated to a fin closed subscheme:
-        \begin{enumerate}
-        \item $T \subset X$ then $D = \sum_{P \in T} length(\ca{O}_{T,P} \cdot P)$
-          \item and $deg_k(D) = \sum_{P \in T} lenth(\ca{O}_{T,P}) \cdot [k(P)/k] = dim_k\Gamma(T, \ca{O}_T) \overset{§4.8}{=:} deg(T)$\\
-        \end{enumerate}        
-        \end{theorem}
+	\begin{prop}
+		If $ D $ is the effective divisor associated to a finite closed subscheme
+		\begin{enumerate}
+			\item $ T \subset X $ then $ D = \underset{P \in T}{\sum} length(\ca{O}_{T,P})\cdot P $
+			\item $ \deg_k(D) = \underset{P \in T}{\sum} length(\ca{O}_{T,P})\cdot [k(P)/k] = \dim_k \Gamma(T, \ca{O}_T) =: \deg T $
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{prop}
+		If $ k $ is a finite extension of $ k' $ $ \Rightarrow $ $ \deg_{k'}(D) = \deg_k(D)\cdot [k/k'] $
+	\end{prop}
+	
+	\begin{prop}
+		For any field extension $ k'/k $. Let $ X' := X_{k'} = X \times_{\spec k} \spec k' \xrightarrow{\pi} X $. Assume $ X' $ integral then
+		\[ \deg_{k'} (\pi^* D) = \deg_k (D) \]
+	\end{prop}
+	
+	\begin{lem}
+		For all $ P,Q \in |X| \: \exists R\in |X| \: :\: P+Q+R \sim 3P_0 $ 
+	\end{lem}
 
+        
+        \begin{thm}
+	        The map $ |X| \rightarrow Cl^0(X) \quad P \mapsto [P - P_0] $ is bijective.        
+        \end{thm}
+        
+        
+        
+	\subsection{Riemann-Roch}
+	
+	\begin{prop}
+		For any short exact sequence $ 0 \rightarrow \caf' \rightarrow \caf \rightarrow \caf'' \rightarrow 0 $ of coherent sheaves \[ \chi(X, \caf) = \chi(X, \caf') + \chi(X, \caf'') \]
+	\end{prop}
+	
+	\begin{lem}
+		For any exact sequence of finite dimensional $ k $-vector spaces $ V^i  $ for $ i \in \bbz $ and almost all zero:
+		\[ \sum_i (-1)^i \dim_k V^i =0 \]
+	\end{lem}
+	
+	\begin{fact}
+		$ \forall L/k $ field extension: $ X_L \xrightarrow{\pi} X $
+		$ \rightsquigarrow \: \chi(X, \caf) = \chi (X_L, \pi^* \caf) $
+	\end{fact}
+	
+	\begin{thm}[Riemann-Roch Version 1]
+		For any invertible sheaf$ \ca{L} $ on $ X $:
+		\[ \chi(X,\ca{L}) = 1 - g + \mathrm{deg}(\ca{L}) \]
+	\end{thm}
+	
+	\begin{thm}[Serre Duality]
+		The sheaf $ \Omega_{X/k} $ is a dualizing sheaf for $ X $ over $ k $ i.e. there exists a natural $ \mathrm{tr}: H^1(X,\Omega_{X/k}) \rightarrow k $ such that for all quasicoherent $ \caf $ we have perfect duality
+		
+		\[ \Hom_{\ox}(\caf, \Omega_{X/k}) \times H^1(X,\caf) \longrightarrow H^1(X, \Omega_{X/k}) \xrightarrow{\mathrm{tr}} k \]
+	\end{thm}
+	
+	\begin{thm}[Riemann-Roch Version 2]
+		$ \ca{L}  $ invertible sheaf on $ X \quad \implies $
+		\[ h^0(X, \cl) - h^0(X, \cl^{\vee} \otimes \Omega_{X/k}) = 1 -g + \mathrm{deg}(\cl) \] 
+	\end{thm}
+	
+	
+	
+	
+	\subsection{Residues}
+	
+	\begin{prop}
+		$ \forall \omega \in \widehat{\Omega}_{\caf/k} \: : \: \mathrm{res}_t(\omega) = \mathrm{res}_t(\omega \circ \varphi) $
+	\end{prop}
+	
+	\begin{prop}
+			$ \forall \omega \in \widehat{\Omega}_{\ca{E}/k} \: : \: \mathrm{res}_u(\omega) = \mathrm{res}_t(\mathrm{tr}_{\ca{E}/\caf} \omega )   $
+	\end{prop}
+	
+	\begin{prop}
+		The composite map $ \Omega_{K/k} \hookrightarrow \widehat{\Omega}_{\caf/k} \xrightarrow{\mathrm{res}_t} k $ is independent of $ t $
+	\end{prop}
+	
+	\begin{prop}
+		Let $ \varphi : X \rightarrow Y $ be a finite separated morphism of such curves corresponding to the finite separated extension of function fields $ K/L $.
+		
+		Define $ \mathrm{tr}_{K/L} $ : \begin{tikzcd}
+			\Omega_{K/k} \ar[r] \ar[d, phantom, "\cong"] & \Omega_{L/K} \\
+			K \otimes_L \Omega_{K/L} \ar[ur, "\mathrm{tr}_{K/L} \otimes \id_{\Omega_{L/k}} "']&\\
+		\end{tikzcd}
+		
+		Then $ \forall \omega \in \Omega_{K/k} \: \forall Q \in |Y| $
+		\[ \underset{P\in \varphi^{-1}(Q)}{\sum} \mathrm{res}_P (\omega) = \mathrm{res}_Q (\mathrm{tr}_{K/L} \omega) \]
+		
+	\end{prop}
+	
+	\begin{thm}[Residue Theorem]
+		\[ \forall \omega \in \Omega_{K/k} \: : \: \underset{P \in |X|}{\sum} \mathrm{res}_P \omega =0 \]
+	\end{thm}
+	
+	
+	
+	
+	\subsection{Serre duality}
+	
+		\begin{thm}[Serre Duality]
+			The sheaf $ \Omega_{X/k} $ is a dualizing sheaf for $ X $ over $ k $ i.e. there exists a natural $ \mathrm{tr}: H^1(X,\Omega_{X/k}) \rightarrow k $ such that for all quasicoherent $ \caf $ we have perfect duality
+			
+			\[ \Hom_{\ox}(\caf, \Omega_{X/k}) \times H^1(X,\caf) \longrightarrow H^1(X, \Omega_{X/k}) \xrightarrow{\mathrm{tr}} k \]
+		\end{thm}
+	
+	
+	\subsection{Some concequences of Riemann-Roch}
+	
+	Now always: $ X $ smooth connected projective curve over $ k $ algebraically closed field.
+	
+	\underline{Abbreviate}: $  h^i(\cl) := h^i(X, \cl) \; \Omega_X := \Omega_{X/k} $
+	
+	\begin{prop}
+		$ \deg(\Omega_{X}) = 2g -2 $
+	\end{prop}	
+	
+	\begin{prop}
+		Any smooth closed curve of degree $ d $ in $ \bbp^2_k $ has $ g = \frac{(d-1)(d-2)}{2} $
+	\end{prop}
+	
+	\begin{prop}
+		TFAE:
+		\begin{enumerate}
+			\item $ X \cong \bbp^1_k $
+			\item $ g=0 $
+			\item $ \deg \Omega_X < 0 $
+			\item $ \forall \cl $ of degree 1: $ h^0(\cl) > 1 $
+			\item $ \exists \cl $ of degree 1: $ h^0(\cl) > 1 $
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{prop}
+		\begin{enumerate}
+			\item $ \forall P \in |X| \: \exists f \in K(X) $ $ f $ has a pole at $ P $ and no ther pole
+			\item $ \forall P \in |X| : $ $ X\setminus\{P\} $ is affine
+			\item $ \exists $ finite morphism $ X \rightarrow \bbp^1_k $ of degree $ \le g+1 $
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{prop}
+		Any locally free coherent sheaf on $ X = \bbp^1_k $ is isomorphic to $ \bigoplus_{i=1}^r \ox(n_i)  $ for unique $ n_1 \ge \dots \ge n_r $
+	\end{prop}
+	
+	\subsection{Embeddings in projective space}
+	
+	Let $ \cl $ be an invertible sheaf on $ X $.
+	
+	\begin{prop}
+		\begin{enumerate}
+			\item $ \cl $ is generated by global sections iff $ \forall P \in |X| \: : \: h^0(\cl(-P)) = h^0(\cl) - 1 $
+			\item $ \cl $ is very ample iff : $ \forall P,Q \in |X| \: : \: h^0(\cl(-P-Q)) = h^0(\cl) -2 $
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{fact}
+		$ \forall \cl : $
+		
+		$ \deg(\cl) < 0 \: \Rightarrow \: h^0(\cl) =0 $
+		
+		$ \deg (\cl) > 2g -2 \: \Rightarrow \: h^1(\cl) = h^0(\cl^{\vee} \otimes \Omega_X) = 0 $
+	\end{fact}
+	
+	\begin{prop}
+		$ \forall \cl $:
+		\begin{enumerate}
+			\item $ \deg (\cl) \ge 2g \: \Rightarrow \: \cl $ is generated by global sections.
+			\item $ \deg (\cl) \ge 2g + 1 \: \Rightarrow \: \cl $ is very ample.
+		\end{enumerate}
+	\end{prop}
+	
+	\begin{cor}
+		$ \cl $ is ample iff $ \deg (\cl) >0 $
+	\end{cor}
+	
+	\begin{prop}
+		$ \forall g \ge 1 \: : \: \Omega_X $ is generated by global sections.
+	\end{prop}
+	
+	\begin{cor}
+		$ g \ge 1 \: \Rightarrow  $ get the canonical morphism $ X \rightarrow \bbp^{g-1}_k $ (unique up to $ PGl_g(k) $)
+		
+		If $ g \ge 2 $ this is non constant and hence finite
+	\end{cor}
+	
+	\begin{prop}
+		$ X $ is hyperelliptic iff $ \exists \cl $ with $ h^0(\cl) = \deg(\cl) = 2 $
+	\end{prop}
 
-        \begin{theorem}
-          If $k'$ is a fin extension of $k$ $\Rightarrow$ $deg_k(D) = deg_{k'}(D) \cdot [k'/k]$\\
-        \end{theorem}
-        
-        
-        \begin{theorem}
-          For any field extension $k'/k$ let $X':= X_{k'} = X \times_{Spec(k)} Spec(k') \xrightarrow{\pi} X$\\
-          Assume $X'$ integral then $deg_{k'}(\pi^*D) = deg_k(D)$\\
-        \end{theorem}
-
-        %
-        %
-        %formatting below
-        %%
-        %
-        \begin{theorem}{Theorem}
-          asdf
-        \end{theorem}
-        
-        \begin{theorem}
-        \end{theorem}
-        
+	\begin{prop}
+		For $ g \ge 2 $ the canonical morphism $ X \rightarrow \bbp^{g-1}_k $ is a closed embedding iff $ X $ is not hyperelliptic
+	\end{prop}
+	
+	\subsection{Hyperelliptic curves}
+	
+	\begin{prop}
+		$ \Omega_{X/k} = f^*\ca{O}_{\bbp^1_k}((g-1)\infty)\cdot \omega $ and
+		
+		$ H^0(X,\Omega_{X/k}) = H^0(\bbp^1_k , \ca{O}_{\bbp^1_k}((g-1)\infty))\cdot \omega $ for $ \omega := \frac{dx}{2y-a(x)} \in \Omega_{K/k} $ for $ K = k(X) $
+	\end{prop}
+	
+	\begin{cor}
+		The canonical morphism factors as $ (g-1) $-uple embedding if $ g \ge 2 $
+		\begin{tikzcd}
+			X \ar[r]\ar[d,"f"] & \bbp^{g-1}_k \\
+			\bbp^1_k \ar[ur, dashrightarrow]
+		\end{tikzcd}
+	\end{cor}
+	
+	\begin{prop}
+		$ char k \ne 2 : $
+		\begin{enumerate}
+			\item for any separated $ c \in k[X] $ of degree $ \{ 2g + 1 , 2g + 2 \} $ the equation $ y^2 = c(x) $ defines a hyperelliptic curve of genus $ g $.
+			\item in particular there exists a hyperelliptic curve of any genus $ \ge 1 $
+		\end{enumerate}
+	\end{prop}
 	
 	
 	
+	\subsection{Coverings}
 	
+	Let $ f:X \rightarrow Y  $ be a finite separated morphism of smooth irreducible projective curves over $ k $ algebraically closed
 	
+	\begin{prop}
+		$ \forall Q \in |Y| \: : \: \underset{P \in f^{-1}(Q)}{\sum} e_p = \deg(f) $
+	\end{prop}
+	
+	\begin{prop}
+		exact sequence \[ 0 \rightarrow f^*\Omega_{Y/k} \rightarrow \Omega_{X/k} \rightarrow \Omega_{X/Y} \rightarrow 0 \]
+	\end{prop}
+	
+	\begin{prop}
+		$ \forall P \in |X| \: : $
+	\[ length(\Omega_{X/Y, P}) =	\begin{cases}
+			e_p-1 & \text{if } char(k)\nmid e_p\\
+			\ge e_p & \text{if } char(k) | e_p
+		\end{cases}
+	\]
+	\end{prop}
+		
+	\begin{thm}[Hurwitz]
+		\[ 2g(X)-2 = \deg (f) \cdot (2g(Y) -2) +\deg(\mathrm{Ram}_f)  \]
+	\end{thm}
+	
+	\begin{prop}
+		$ Aut_k(X) $ is finite.
+	\end{prop}
 	
 	
 \end{document}
