@@ -1,5 +1,6 @@
-AG.tex
-AG.aux
-AG.log
-AG.pdf
-AG.tex
+*.tex$
+*.aux$
+*.log$
+*.out$
+*.pdf$
+*.toc$
